@@ -147,77 +147,6 @@ span.phone {
     display: none;
   }
 }
-
-/* -----------FOOTER--------- */
-.container_footer {
-  display: flex;
-  flex-direction: row;
-  background-color: #ddf5ff;
-  height: 17vh;
-  position: relative;
-  bottom: 0px;
-}
-.footer-left {
-  display: flex;
-  /* flex-direction: row; */
-  width: 500px;
-  min-width: 360px;
-}
-p.info {
-  font-size: 13px;
-  margin-left: 20px;
-  margin-top: 20px;
-  font-family: "Nunito";
-}
-.logo {
-  display: flex;
-  width: 30%;
-  margin-top: -10px;
-  overflow: hidden;
-}
-img.logoo {
-  width: 150px;
-  height: 150px;
-  min-width: 150px;
-}
-hr.vertical {
-  width: 0px;
-  height: 100px;
-}
-.footer-middle {
-  display: flex;
-  width: 350px;
-  min-width: 350px;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
-}
-a:hover {
-  color: #012970;
-}
-/* #menu {
-    width: 400px;
-  } */
-#menu {
-  width: 100%;
-  height: 100px;
-  margin-top: 10px;
-}
-#menu td {
-  width: 100px;
-}
-#menu tr,
-td {
-  height: 20px;
-}
-p.contact_footer {
-  margin-left: 20px;
-  margin-top: 15px;
-  font-size: 17px;
-  line-height: 30px;
-}
 /*---------------- thanh navigation---------------- */
 .navbar {
   overflow: hidden;
@@ -310,4 +239,77 @@ p.contact_footer {
 }
 .a {
   float: none;
+}
+/* -----------FOOTER--------- */
+.container_footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #ddf5ff;
+  height: 17vh;
+  position: relative;
+  bottom: 0px;
+}
+.footer-left {
+  display: flex;
+  /* flex-direction: row; */
+  width: 500px;
+  min-width: 360px;
+}
+p.info {
+  font-size: 13px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: "Nunito";
+}
+.logo {
+  display: flex;
+  width: 30%;
+  margin-top: -10px;
+  overflow: hidden;
+}
+img.logoo {
+  width: 150px;
+  height: 150px;
+  min-width: 150px;
+}
+hr.vertical {
+  width: 0px;
+  height: 100px;
+}
+.footer-middle {
+  display: flex;
+  width: 350px;
+  min-width: 350px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #012970;
+}
+/* #menu {
+    width: 400px;
+  } */
+#menu {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+}
+#menu td {
+  width: 100px;
+}
+#menu tr,
+td {
+  height: 20px;
+}
+p.contact_footer {
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 17px;
+  line-height: 30px;
+}
+.bold{
+  font-weight: bold;
 }
