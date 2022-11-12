@@ -10,11 +10,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <header id="header">
+    <header id="header" >
       <div class="container">
-        <div class="logo">
+        <div class="logo_header">
           <img src="./image/logo.png" alt="Logo" class="logoo" />
         </div>
         <div class="slogan">
@@ -34,7 +35,6 @@
         </div>
         <div class="contact">
           <div class="phoneNumb">
-            <!-- <img src="../image/old-typical-phone.svg" class="icon_phone" /> -->
             ☎<span class="phone"> (+84) 862 228 2288</span>
           </div>
           <div class="btn">
@@ -54,7 +54,52 @@
         </div>
       </div>
     </header>
-    <div class="navbar">
+    <header class="none" id="header_mb">
+      <div class="container">
+        <div class="header_mb-menu">
+          <img src="./image/menu-alt-64.webp" class="menu_image">
+        </div>
+        <div class="logo_header">
+          <img src="./image/logo.png" alt="Logo" class="logoo" />
+        </div>
+        <div class="slogan">
+          <h2>BỆNH VIỆN ĐA KHOA QUỐC TẾ T-TYPH</h2>
+          <h4>"ĐIỀU TRỊ BẰNG TRÁI TIM - CHĂM SÓC BẰNG TẤM LÒNG"</h4>
+        </div>
+        <!-- <div class="search">
+          <form action="#" method="post" class="form-search">
+            <input
+              type="text"
+              readonly
+              onfocus="this.removeAttribute('readonly')"
+              placeholder="Tìm kiếm ..."
+            />
+            <button type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div> -->
+        <div class="contact">
+          <!-- <div class="phoneNumb">
+            ☎<span class="phone"> (+84) 862 228 2288</span>
+          </div> -->
+          <div class="btn">
+            <form action="#" method="get" class="form-button">
+              <button class="btn_logIn" type="submit">ĐĂNG NHẬP</button> <br>
+              <button class="btn_datLich" type="submit">
+                <i class="bi bi-calendar3"></i> ĐẶT LỊCH
+              </button>
+              
+            </form>
+          </div>
+        </div>
+        <!-- <div class="qrCode">
+          <img
+            src="./image/314980762_1408401016358976_7193221243400698382_n.jpg"
+            class="maQR"
+          />
+        </div> -->
+      </div>
+    </header>
+    <div class="navbar none">
       <a href="#trangchu">TRANG CHỦ</a>
       <div class="dropdown">
         <button class="nut_dropdown">GIỚI THIỆU ▼</button>
@@ -114,7 +159,7 @@
             <strong>GPHĐ khám chữa bệnh </strong> số 205/BHYT <br />
             <strong>GPHĐ do BYT </strong> cấp ngày 02/11/2022
           </p>
-          <div class="logo">
+          <div class="logo_footer">
             <img src="./image/logo.png" alt="Logo" class="logoo" />
           </div>
           <hr class="vertical" />
@@ -142,10 +187,10 @@
         </div>
         <div class="footer-right">
           <p class="contact_footer">
-            Số 68, đường Nguyễn Văn Hưởng, phường Thảo Điền, TP Thủ Đức, TP HCM
+            <i class="fa fa-map-marker"></i> &nbsp;&nbsp;&nbsp; Số 68, đường Nguyễn Văn Hưởng, phường Thảo Điền, TP Thủ Đức, TP HCM
             <br />
-            (+84) 862 228 2288 <br />
-            Email: contact@ttyph.com.vn
+            <i class="fa fa-phone"></i> &nbsp;&nbsp;&nbsp;(+84) 862 228 2288 <br />
+            <i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp;Email: contact@ttyph.com.vn
           </p>
         </div>
       </div>
