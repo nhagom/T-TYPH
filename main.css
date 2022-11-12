@@ -4,13 +4,13 @@ body {
   padding: 0;
   margin: 0;
 }
-#header {
-  background-color: #ddf5ff;
+.none{
+  display: none;
 }
 h2 {
   font-size: 30px;
   font-family: "Nunito", serif;
-  text-shadow: 0px 9px 26px #77325a;
+  text-shadow: 3px 5px 5px gray  ;
   height: fit-content;
   margin-bottom: 10px;
 }
@@ -24,7 +24,8 @@ h4 {
 .container {
   display: flex;
   flex-direction: row;
-  height: 120px;
+  height: 18vh;
+  background-color: #ddf5ff;
 }
 .logo {
   /* width: 76px;
@@ -42,19 +43,19 @@ img {
   height: 120px;
   margin: 0;
 }
-img.logoo {
+img.logoo_header {
   width: 150px;
   height: 150px;
 }
 
 .slogan {
-  width: 600px;
+  /* width: 600px; */
   text-align: center;
   min-width: 600px;
 }
 .search {
   width: 25%;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 .form-search {
   width: 100%;
@@ -94,7 +95,6 @@ img.logoo {
 } */
 .contact {
   width: 250px;
-  margin-left: -50px;
   min-width: 250px;
 }
 .phoneNumb {
@@ -141,82 +141,13 @@ span.phone {
 }
 .qrCode {
   min-width: 108px;
+  position: absolute;
+  right: 0px;
 }
 @media screen and (max-width: 1254px) {
   img.maQR {
     display: none;
   }
-}
-
-/* -----------FOOTER--------- */
-.container_footer {
-  display: flex;
-  flex-direction: row;
-  background-color: #ddf5ff;
-  height: 17vh;
-  position: relative;
-  bottom: 0px;
-}
-.footer-left {
-  display: flex;
-  /* flex-direction: row; */
-  width: 500px;
-  min-width: 360px;
-}
-p.info {
-  font-size: 13px;
-  margin-left: 20px;
-  margin-top: 20px;
-  font-family: "Nunito";
-}
-.logo {
-  display: flex;
-  width: 30%;
-  margin-top: -10px;
-  overflow: hidden;
-}
-img.logoo {
-  width: 150px;
-  height: 150px;
-  min-width: 150px;
-}
-hr.vertical {
-  width: 0px;
-  height: 100px;
-}
-.footer-middle {
-  display: flex;
-  width: 350px;
-  min-width: 350px;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
-}
-a:hover {
-  color: #012970;
-}
-/* #menu {
-    width: 400px;
-  } */
-#menu {
-  width: 100%;
-  height: 100px;
-  margin-top: 10px;
-}
-#menu td {
-  width: 100px;
-}
-#menu tr,
-td {
-  height: 20px;
-}
-p.contact_footer {
-  margin-left: 20px;
-  margin-top: 15px;
-  font-size: 17px;
-  line-height: 30px;
 }
 /*---------------- thanh navigation---------------- */
 .navbar {
@@ -310,4 +241,124 @@ p.contact_footer {
 }
 .a {
   float: none;
+}
+/* -----------FOOTER--------- */
+.container_footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #ddf5ff;
+  height: 18vh;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+.footer-left {
+  display: flex;
+  /* flex-direction: row; */
+  width: 30%;
+  min-width: 360px;
+}
+p.info {
+  font-size: 13px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: "Nunito";
+}
+.logo_footer {
+  display: flex;
+  width: 35%;
+  margin-top: -10px;
+  overflow: hidden;
+}
+img.logoo {
+  width: 150px;
+  height: 150px;
+}
+hr.vertical {
+  width: 0px;
+  height: 100px;
+}
+.footer-middle {
+  display: flex;
+  width: 25%;
+  min-width: 250px;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #012970;
+}
+/* #menu {
+    width: 400px;
+  } */
+#menu {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+}
+#menu td {
+  width: 100px;
+}
+#menu tr,
+td {
+  height: 20px;
+}
+p.contact_footer {
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 17px;
+  line-height: 28px;
+  overflow: hidden;
+}
+.footer_right{
+  height: 100%;
+}
+@media screen and (max-width: 1000px) {
+  p.contact_footer{
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+  .footer-middle{display: none;}
+  p.info{
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+.bold{
+  font-weight: bold;
+}
+/*----------------------mobile--------------------*/
+.header_mb-menu{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:30px;
+  left: 20px;
+}
+.menu_image{
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1100px) {
+  #header{
+    display: none;
+  }
+  #header_mb{
+    display: block;
+  }
+  h2{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 14px;
+  }
+  .sologan{
+    position: absolute;
+    top:30px;
+  }
 }
