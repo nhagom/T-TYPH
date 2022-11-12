@@ -1,13 +1,63 @@
+/* css form */
+.form{
+  height: 60vh;
+  background-color: rgba(221, 245, 255, 0.5);
+  padding: 10px;
+}
+h2{
+  text-align: center;
+}
+form{
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  width: 35%;
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+#noidung{
+  width: 99%;
+  height: 100px;
+  margin: 10px 0px;
+  border-radius: 7px;
+}
+textarea{
+  border: 1px solid gray;
+}
+::placeholder{
+  font-style: italic;
+}
+.submit{
+  display: flex;
+  justify-content: end;
+}
+#submit{
+  height: 25px;
+  border: 2px solid rgba(3, 149, 181, 1);
+  border-radius: 10px;
+  background-color: rgb(69, 171, 212);
+  color: white;
+}
+.red{
+  color: red;
+}
+.blue{
+  color: rgba(40, 170, 220, 1);
+}
+
+/* css cho đánh giá sao */
 div.stars {
-    width: 270px;
-    display: inline-block;
+    display:inline-block;
+    width: 70%;
   }
   input.star { 
     display: none; 
 }  
   label.star {
     float: right;
-    padding: 10px;
+    padding: 5px;
     font-size: 36px;
     color: #444;
     transition: all .2s;
@@ -30,4 +80,48 @@ div.stars {
   label.star:before {
     content: '\f006';
     font-family: FontAwesome;
-  }
+}
+
+/* css cho từng slide */
+.slides{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.comment img{
+  width: 50px;
+  float: left ;
+}
+.comment{
+  display: flex;
+  width: 22%;
+  padding: 10px;
+  border: 2px solid rgba(3, 149, 181, 1);
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px gray;
+  min-width: 170px;
+  margin: 10px 5px;
+}
+.avatar{
+  height: 100%;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+}
+.userName{
+  font-size: medium;
+  font-weight: bold;
+}
+.italic{
+  font-style: italic;
+  color: gray;
+}
+.sao{
+  margin: 5px 0px;
+}
+
+
+
+
