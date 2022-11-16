@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang đặt lịch</title>
+</head>
+<body>
+    <div class="ta-booking">
+        <form class="el-form ta-frame">
+            <div class="ta-frame__header">
+                <div class="ta-frame__header-title">Đăng ký khám bệnh</div>
+            </div>
+            <div class="ta-frame__content"><!---->
+                <form class="el-form el-form--label-top">
+                    <div class="el-form-item">
+                        <label for="vendor" class="el-form-item__label">Chọn địa điểm khám</label>
+                        <div class="el-form-item__content">
+                            <label role="radio" tabindex="0" class="el-radio">
+                                <span class="el-radio__input">
+                                    <span class="el-radio__inner"></span>
+                                    <input type="radio" aria-hidden="true" tabindex="-1" autocomplete="off" class="el-radio__original" value="ha-noi">
+                                </span>
+                                <span class="el-radio__label">BVĐK Tâm Anh Hà Nội<!----></span>
+                            </label>
+                            <label role="radio" tabindex="0" class="el-radio">
+                                <span class="el-radio__input">
+                                    <span class="el-radio__inner"></span>
+                                    <input type="radio" aria-hidden="true" tabindex="-1" autocomplete="off" class="el-radio__original" value="ho-chi-minh">
+                                </span>
+                                <span class="el-radio__label">BVĐK Tâm Anh TP. HCM<!----></span>
+                            </label><!---->
+                        </div>
+                    </div>
+                    <div class="el-form-item">
+                        <label for="service_type" class="el-form-item__label">Chọn loại dịch vụ khám</label>
+                        <div class="el-form-item__content">
+                            <label role="radio" tabindex="0" class="el-radio">
+                                <span class="el-radio__input">
+                                    <span class="el-radio__inner"></span>
+                                    <input type="radio" aria-hidden="true" tabindex="-1" autocomplete="off" class="el-radio__original" value="trong_gio">
+                                </span>
+                                <span class="el-radio__label">Khám trong giờ<!----></span>
+                            </label>
+                            <label role="radio" tabindex="0" class="el-radio">
+                                <span class="el-radio__input">
+                                    <span class="el-radio__inner"></span>
+                                    <input type="radio" aria-hidden="true" tabindex="-1" autocomplete="off" class="el-radio__original" value="ngoai_gio">
+                                </span>
+                                <span class="el-radio__label">Khám ngoài giờ<!----></span>
+                            </label>
+                            <label role="radio" tabindex="0" class="el-radio">
+                                <span class="el-radio__input">
+                                    <span class="el-radio__inner"></span>
+                                    <input type="radio" aria-hidden="true" tabindex="-1" autocomplete="off" class="el-radio__original" value="online">
+                                </span>
+                                <span class="el-radio__label">Khám online<!----></span>
+                            </label><!---->
+                        </div>
+                    </div>
+                    <div class="ta-frame__blocker ta-frame__blocker--blocked">
+                        <div class="ta-frame__blocker-help">Vui lòng chọn địa điểm khám &amp; dịch vụ khám trước</div>
+                        <div class="ta-frame__blocker-content">
+                            <div class="el-row" style="margin-left: -6px; margin-right: -6px;">
+                                <div class="el-col el-col-24 el-col-xs-12 el-col-sm-12" style="padding-left: 6px; padding-right: 6px;">
+                                    <div class="el-form-item is-required"><!---->
+                                        <div class="el-form-item__content">
+                                            <div data-v-b270d436="" class="gia-select">
+                                                <i data-v-b270d436="" class="gia-select__caret el-select__caret el-input__icon el-icon-arrow-down"></i>
+                                                <select data-v-b270d436="" placeholder="Chọn chuyên khoa" class="gia-select__input gia-select__input--native el-input__inner">
+                                                    <option data-v-b270d436="" disabled="disabled" selected="selected" value="">Chọn chuyên khoa</option>
+                                                </select>
+                                            </div><!---->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="el-col el-col-24 el-col-xs-12 el-col-sm-12" style="padding-left: 6px; padding-right: 6px;">
+                                    <div class="el-form-item"><!---->
+                                        <div class="el-form-item__content">
+                                            <div data-v-b270d436="" class="gia-select">
+                                                <i data-v-b270d436="" class="gia-select__caret el-select__caret el-input__icon el-icon-arrow-down"></i>
+                                                <select data-v-b270d436="" placeholder="Chọn bác sĩ" class="gia-select__input gia-select__input--native el-input__inner">
+                                                    <option data-v-b270d436="" disabled="disabled" selected="selected" value="">Chọn bác sĩ</option>
+                                                </select>
+                                            </div><!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="el-form-item"><!---->
+                                <div class="el-form-item__content">
+                                    <div data-v-80145740="" class="gia-scheduler el-input el-input--prefix">
+                                        <div data-v-80145740="" class="gia-scheduler__input el-input__inner">
+                                            <span data-v-80145740="" class="el-input__prefix">
+                                                <i data-v-80145740="" class="el-input__icon bx bx-calendar"></i>
+                                            </span>
+                                            <div data-v-80145740="" class="gia-scheduler__input-content">Chọn ngày giờ khám</div>
+                                        </div><!---->
+                                    </div><!---->
+                                </div>
+                            </div><!---->
+                        </div>
+                    </div>
+                    <div class="el-form-item is-required">
+                        <label for="note" class="el-form-item__label">Vấn đề sức khỏe cần khám</label><div class="el-form-item__content"><div class="el-textarea"><textarea autocomplete="off" rows="4" placeholder="Nhập tình trạng sức khoẻ của bạn, câu hỏi dành cho bác sĩ và các vấn đề sức khỏe cần khám" class="el-textarea__inner" style="min-height: 33px;"></textarea><!----></div><!----></div></div><button type="button" class="el-button expanded el-button--primary"><!----><!----><span>NHẬP THÔNG TIN NGƯỜI CẦN KHÁM →</span></button></form></div><div class="el-loading-mask" style="display: none;"><div class="el-loading-spinner"><svg viewBox="25 25 50 50" class="circular"><circle cx="50" cy="50" r="20" fill="none" class="path"></circle></svg><!----></div></div></form><!----></div>
+</body>
+</html>
