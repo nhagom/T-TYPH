@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* thanh navigation */
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: rgba(40, 170, 220, 1);
+        font-family: Arial;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-evenly;
+      }
+      /* đường dẫn bên trong navigation */
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      /* thành phần dropdown */
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      /* nút dropdown */
+      .dropdown .nut_dropdown {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        font-weight: bold;
+      }
+      /* thêm màu background khi nút dropdown khi hover */
+      .navbar a:hover,
+      .nut_dropdown:hover {
+        background-color: white;
+        color: rgba(40, 170, 220, 1);
+      }
+      /* Ẩn nội dung dropdown*/
+      .noidung_dropdown {
+        display: none;
+        position: absolute;
+        background-color: rgba(40, 170, 220, 1);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      /* thiết lập style cho đường dẫn bên trong dropdown */
+      .noidung_dropdown a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        border: 0.5px solid white;
+      }
+      /* chọn background cho đường dẫn bên trong dropdown khi hover*/
+      .noidung_dropdown a:hover {
+        background-color: white;
+        color: rgba(40, 170, 220, 1);
+        border: 0.5px solid rgba(40, 170, 220, 1);
+      }
+      /* Hiển thị nội dung dropdown khi được hover */
+      .dropdown:hover .noidung_dropdown {
+        display: block;
+      }
+      .nut_goikham {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+      }
+      .nut_goikham:hover {
+        background-color: white;
+        color: rgba(40, 170, 220, 1);
+        border: 0.5px solid rgba(40, 170, 220, 1);
+      }
+      .flex_container {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+      }
+      .a {
+        float: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#trangchu">TRANG CHỦ</a>
+      <div class="dropdown">
+        <button class="nut_dropdown">GIỚI THIỆU ▼</button>
+        <div class="noidung_dropdown">
+          <a href="#">TẦM NHÌN, SỨ MỆNH</a>
+          <a href="#">SƠ ĐỒ TỔ CHỨC</a>
+          <a href="#">CHÍNH SÁCH BẢO MẬT</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="nut_dropdown">CHUYÊN KHOA ▼</button>
+        <div class="noidung_dropdown">
+          <a href="#">CẤP CỨU</a>
+          <a href="#">NỘI HÔ HẤP</a>
+          <a href="#">TIÊU HÓA</a>
+          <a href="#">CƠ XƯƠNG KHỚP</a>
+          <a href="#">TAI MŨI HỌNG</a>
+          <a href="#">UNG BƯỚU</a>
+          <a href="#">NHI</a>
+          <a href="#">DƯỢC</a>
+          <a href="#">SẢN</a>
+          <a href="#">NỘI TỔNG HỢP</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="nut_dropdown">DỊCH VỤ ▼</button>
+        <div class="noidung_dropdown">
+          <a href="#">KHÁM THƯỜNG</a>
+          <div class="flex_container">
+            <button class="nut_goikham">
+              GÓI KHÁM &nbsp;&nbsp;&nbsp;▶&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>
+            <div class="a">
+              <a href="#">KHÁM TỔNG QUÁT</a>
+              <a href="">TẦM SOÁT UNG THƯ TOÀN DIỆN</a>
+              <a href="">TẦM SOÁT UNG THƯ PHỔI</a>
+              <a href="">TẦM SOÁT UNG THƯ CỔ TỬ CUNG</a>
+              <a href="">TẦM SOÁT UNG THƯ GAN</a>
+              <a href="">TẦM SOÁT UNG THƯ HỆ TIÊU HÓA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#trangchu">TIN TỨC</a>
+      <a href="#trangchu">ĐÁNH GIÁ</a>
+    </div>
+  </body>
+</html>
