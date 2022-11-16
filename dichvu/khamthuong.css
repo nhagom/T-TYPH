@@ -49,9 +49,11 @@ a{
         padding: 10px;
     }
 }
-@media screen and (max-width: 450px) {
-    body{
-        font-size: 0.5em;
+@media screen and (max-width: 550px) {
+    ul {
+        padding-inline-start: 5px;
     }
 }
-   
+.bi-check-circle-fill{
+    color: rgba(3, 137, 188, 1);
+}
