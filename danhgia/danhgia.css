@@ -90,13 +90,9 @@ div.stars {
   flex-wrap: wrap;
   overflow: hidden;
   position: relative;
+
 }
-.sl1{
-  z-index: 1;
-}
-.sl2{
-  z-index: 2;
-}
+
 .comment img{
   width: 50px;
   float: left ;
@@ -131,6 +127,11 @@ div.stars {
   margin: 5px 0px;
 }
 
+/* css cho slideshow */
+.container{
+  overflow: hidden;
+  position: relative;
+}
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -145,6 +146,4 @@ div.stars {
   from {opacity: .4}
   to {opacity: 1}
 }
-
-
 
