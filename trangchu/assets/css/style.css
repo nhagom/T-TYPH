@@ -509,21 +509,23 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Device
+# Gallery
 --------------------------------------------------------------*/
-.device .device-item {
+.gallery .gallery-item {
   overflow: hidden;
   border-right: 3px solid #fff;
   border-bottom: 3px solid #fff;
+  width: 1200px;
 }
 
-.device .device-item img {
+.gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
 }
 
-.device .device-item:hover img {
+.gallery .gallery-item:hover img {
   transform: scale(1.1);
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -532,11 +534,17 @@ section {
   margin-bottom: 15px; /*Khoảng cách các div tổng*/
 }
 
+.portfolio img{
+  width: 100%;
+}
+
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  width: 400px;
+  height: 200px;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -585,8 +593,8 @@ section {
 .portfolio .portfolio-wrap .portfolio-info::after {
   display: block;
   content: "";
-  width: 48px;
-  height: 48px;
+  width: 96px;
+  height: 96px;
   position: absolute;
   bottom: 35px;
   right: 35px;
@@ -600,30 +608,15 @@ section {
   font-size: 14px;
   color: #fff;
   font-weight: 60;
+  padding: 0;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #ffffff;
   font-size: 12px;
-  padding: 0;
+  padding: 0px 30px 0 30px; 
   margin: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-links {
-  text-align: center;
-  z-index: 4;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: rgba(255, 255, 255, 0.6);
-  margin: 0 2px;
-  font-size: 10px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #fff;
+  text-align: justify;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -652,19 +645,19 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 30px;
   position: relative;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 50px;
+  height: 50px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #2487ce;
@@ -680,32 +673,11 @@ section {
 }
 
 
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 40px 40px 40px 40px;
-  margin: 30px 15px;
-  min-height: 200px;
-  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.08);
-  position: relative;
-  background: #fff;
-}
-
 .testimonials .testimonial-item .testimonial-img {
   width: 100%;
-  border-radius: 10px;
 }
 
 .testimonials .testimonial-item .quote-icon-right {
