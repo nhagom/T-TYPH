@@ -508,49 +508,23 @@ section {
   font-size: 14px;
 }
 
-
 /*--------------------------------------------------------------
-# Gallery
+# Device
 --------------------------------------------------------------*/
-.gallery {
+.device .device-item {
   overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
 }
 
-.gallery .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
+.device .device-item img {
+  transition: all ease-in-out 0.4s;
 }
 
-.gallery .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #3fbbc0;
+.device .device-item:hover img {
+  transform: scale(1.1);
 }
 
-.gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3fbbc0;
-}
-
-.gallery .swiper-slide-active {
-  text-align: center;
-}
-
-@media (min-width: 992px) {
-  .gallery .swiper-wrapper {
-    padding: 40px 0;
-  }
-
-  .gallery .swiper-slide-active {
-    border: 6px solid #3fbbc0;
-    padding: 4px;
-    background: #fff;
-    z-index: 1;
-    transform: scale(1.2);
-    margin-top: 10px;
-  }
-}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -560,7 +534,7 @@ section {
 
 .portfolio #portfolio-flters {
   padding: 0;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
   border-radius: 50px;
@@ -570,19 +544,19 @@ section {
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 15px 8px 15px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
   color: #444444;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #49b5e7;
+  color: #2487ce;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -594,12 +568,11 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.6);
 }
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(36, 135, 206, 0.6);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -634,8 +607,8 @@ section {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid #bdc6ca;
-  border-left: 3px solid #bdc6ca;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -648,20 +621,20 @@ section {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid #bdc6ca;
-  border-right: 3px solid #bdc6ca;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #0f394c;
+  color: #fff;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #0f394c;
+  color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -674,7 +647,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #49b5e7;
+  color: rgba(255, 255, 255, 0.6);
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -682,7 +655,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #8dd0f0;
+  color: #fff;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -728,16 +701,16 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #49b5e7;
+  border: 1px solid #2487ce;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #49b5e7;
+  background-color: #2487ce;
 }
 
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(15, 57, 76, 0.08);
+  box-shadow: 0px 0 30px rgba(18, 66, 101, 0.08);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -837,7 +810,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------------------
 # Address
 --------------------------------------------------------------*/
 
