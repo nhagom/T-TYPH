@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <style>
+        .comment img{
+  width: 50px;
+  float: left ;
+}
+.comment{
+  display: flex;
+  width: 22%;
+  padding: 10px;
+  border: 2px solid rgba(3, 149, 181, 1);
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px gray;
+  min-width: 170px;
+  margin: 10px 5px;
+}
+.avatar{
+  height: 100%;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+}
+.userName{
+  font-size: medium;
+  font-weight: bold;
+}
+.italic{
+  font-style: italic;
+  color: gray;
+}
+.sao{
+  margin: 5px 0px;
+}
+
+/* test */
+.testimonials .testimonial-wrap {
+  padding-left: 50px;
+}
+
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+  overflow: hidden;
+}
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #1977cc;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #1977cc;
+}
+
+@media (max-width: 767px) {
+  .testimonials .testimonial-wrap {
+    padding-left: 0;
+  }
+
+  .testimonials .testimonials-carousel,
+  .testimonials .testimonials-slider {
+    overflow: hidden;
+  }
+
+  .testimonials .testimonial-item {
+    padding: 30px;
+    margin: 15px;
+  }
+
+  .testimonials .testimonial-item .testimonial-img {
+    position: static;
+    left: auto;
+  }
+}
+    </style>
+</head>
+<body>
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+    
+                    <div class="swiper-slide"> 
+                        <div class="testimonial-wrap">
+                            <div class="comment">
+                                <div class="avatar">
+                                    <img src="./image/kimtran.jpg" alt="avatar">
+                                </div>
+                                <div class="content">
+                                    <div class="userName">Kim Tran</div>
+                                    <div class="sao">⭐⭐⭐⭐⭐</div>
+                                    <div class="italic">Chất lượng và dịch vụ rất tốt, rất đáng quan tâm</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="comment">
+                                <div class="avatar">
+                                    <img src="./image/minhkhoi.jpg" alt="avatar">
+                                </div>
+                                <div class="content">
+                                    <div class="userName">Minh Khôi</div>
+                                    <div class="sao">⭐⭐⭐⭐⭐</div>
+                                    <div class="italic">Đặt lịch trực tuyến rất hiệu quả, tiết kiệm thời gian.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="comment">
+                                <div class="avatar">
+                                    <img src="./image/thuyquynh.jpg" alt="avatar">
+                                </div>
+                                <div class="content">
+                                    <div class="userName">Thúy Quỳnh</div>
+                                    <div class="sao">⭐⭐⭐⭐⭐</div>
+                                    <div class="italic">Trang thiết bị rất hiện đại, các cơ sở vật chất đều mới</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="comment">
+                                <div class="avatar">
+                                    <img src="./image/Alex.jpg" alt="avatar">
+                                </div>
+                                <div class="content">
+                                    <div class="userName">Alex</div>
+                                    <div class="sao">⭐⭐⭐⭐⭐</div>
+                                    <div class="italic">Great! This is a great experience!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="comment">
+                                <div class="avatar">
+                                    <img src="./image/NamNguyen.jpg" alt="avatar">
+                                </div>
+                                <div class="content">
+                                    <div class="userName">Nam Nguyen</div>
+                                    <div class="sao">⭐⭐⭐⭐</div>
+                                    <div class="italic">Dịch vụ khá tốt, giá cả phải chăng.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      }
+    }
+  });
+    </script>
+</body>
+</html>
