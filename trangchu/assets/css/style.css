@@ -14,7 +14,7 @@ a:hover {
 }
 
 h1,
-h2,
+h2
 h3,
 h4,
 h5,
@@ -510,23 +510,47 @@ section {
 
 
 /*--------------------------------------------------------------
-# Device
+# Gallery
 --------------------------------------------------------------*/
-.device .device-item {
+.gallery {
   overflow: hidden;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
 }
 
-.device .device-item img {
-  transition: all ease-in-out 0.4s;
-  width: 100%;
+.gallery .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
 }
 
-.device .device-item:hover img {
-  transform: scale(1.1);
+.gallery .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #3fbbc0;
 }
 
+.gallery .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #3fbbc0;
+}
+
+.gallery .swiper-slide-active {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .gallery .swiper-wrapper {
+    padding: 40px 0;
+  }
+
+  .gallery .swiper-slide-active {
+    border: 6px solid #3fbbc0;
+    padding: 4px;
+    background: #fff;
+    z-index: 1;
+    transform: scale(1.2);
+    margin-top: 10px;
+  }
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -692,7 +716,6 @@ section {
 
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
-  height: 100%;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -747,6 +770,71 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  padding: 40px 40px 40px 40px;
+  margin: 30px 15px;
+  min-height: 200px;
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.08);
+  position: relative;
+  background: #fff;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #28AADC;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #28AADC;
+}
+
+@media (max-width: 767px) {
+  .testimonials .testimonial-wrap {
+    padding-left: 0;
+  }
+
+  .testimonials .testimonials-carousel,
+  .testimonials .testimonials-slider {
+    overflow: hidden;
+  }
+
+  .testimonials .testimonial-item {
+    padding: 30px;
+    margin: 15px;
+  }
+
+  .testimonials .testimonial-item .testimonial-img {
+    position: static;
+    left: auto;
+  }
 }
 
 /*--------------------------------------------------------------
