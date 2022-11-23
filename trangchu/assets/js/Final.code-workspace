@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../HK5-WEB-Learn/TEST_19102022"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Final"
+	}
+}
