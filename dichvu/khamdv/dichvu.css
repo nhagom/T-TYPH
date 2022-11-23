@@ -1,0 +1,84 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html body{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(241, 241, 241);
+    padding: 20px 30px;
+    justify-content: space-evenly;
+}
+.box{
+   width: 30%;
+   background-color: white;
+   padding: 10px;
+   margin: 15px 5px;
+   border-radius: 10px;
+   border: 0.5px solid grey;
+   box-shadow: 3px 3px 0 0 rgb(170, 170, 170);
+}
+.box img{
+    width: 50px;
+    margin-top: 10px;
+}
+.img{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(221, 245, 255, 1);
+    border-radius: 5px;
+    text-align: center;
+}
+@media screen and (max-width:750px) {
+    .box{
+        width: 40%;
+    }
+}
+@media screen and (max-width:550px) {
+    .box{
+        width: 90%;
+    }
+}
+.banner img{
+    width: 100%;
+}
+hr{
+    width: 100px;
+    background-color: black;
+    height: 3px;
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+    color:  rgba(40, 170, 220, 1);
+    margin-bottom: 0;
+}
+h3{
+    color: rgba(40, 170, 220, 1);
+}
+.box:hover{
+    background-color:rgba(40, 170, 220, 1);
+}
+.box:hover h3{
+    color: white;
+}
+.box:hover .img{
+    background-color: white;
+}
+.box:hover a{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+}
