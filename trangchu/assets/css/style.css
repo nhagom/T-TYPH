@@ -709,10 +709,7 @@ section {
     padding-left: 0;
   }
 
-  .testimonials .testimonials-carousel,
-  .testimonials .testimonials-slider {
-    overflow: hidden;
-  }
+
 
   .testimonials .testimonial-item {
     padding: 30px;
