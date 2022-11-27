@@ -13,7 +13,7 @@ p, ul, li{
 }
 h4{
     color: rgb(93, 91, 91);
-    margin-top: -5px;
+    margin-top: 0px;
     margin-bottom: -5px;
 }
 h3, h2{
@@ -24,4 +24,46 @@ span{
 }
 #anKieng{
     height: 65vh;
+}
+.menuThongMinh{
+    width: 50px;
+    background-color: rgba(40, 169, 220, 0.464);
+    /* text-align: center; */
+    border-radius: 5px;
+    position:fixed;
+    color: rgba(0, 0, 0, 0.267);
+    right: 250px;
+    top:50%;
+}
+.noiDungMenu{
+    width: 40vw;
+    position: fixed;
+    left: 50vw;
+    display: none;
+    background-image: linear-gradient(45deg, rgba(8, 184, 238, 0.866),rgba(3, 57, 144, 0.811));
+    border-radius: 10px;
+}
+.noiDungMenu ul li{
+    list-style: none;
+    color: rgb(17, 17, 17);
+}
+.menuThongMinh:hover{
+    background-color: rgb(40, 169, 220);
+    color: black;
+}
+.menuThongMinh:hover .noiDungMenu{
+    display: block;
+}
+.noiDungMenu:hover{
+    background-image: linear-gradient(45deg, rgb(8, 184, 238),rgb(3, 57, 144));
+}
+.noiDungMenu ul li:hover{
+    color: aliceblue;
+}
+.noiDungMenu a:hover{
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
