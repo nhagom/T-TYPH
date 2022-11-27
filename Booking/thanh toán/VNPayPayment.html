@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VNPay Payment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="./payment.js"></script>
+    </head>
+    <body>
+        <section class = "paymentBanner">
+            <h2>CỔNG THANH TOÁN</h2>
+            <div class = "paymentContainer">
+                <div class = "paymentQR">
+                    <h3>Quét mã QR để thanh toán</h3>
+                    <p>Sử dụng camera hỗ trợ QR code để quét mã</p>
+                    <img class="imgQR" src="./QR/QRVNPay.jpg">
+                </div>
+                <div class = "paymentInformation">
+                    <h3>Thông tin đơn hàng</h3>
+                    <form>
+                        <div class = "paymentRow">
+                            <p>Nhà cung cấp</p> 
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img class="imgLogo" src="./Logo/T-TYPH LOGO.png" alt="">
+                                    </td>
+                                    <td>
+                                        <p class="paymentRowBold">BỆNH VIỆN ĐA KHOA QUỐC TẾ T-TYPH</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>        
+                        <hr>                
+                        <div class = "paymentRow">
+                            <p>Mã đơn hàng</p>
+                            <p class="paymentRowBold">YMO22111160807</p>
+                        </div>
+                        <hr>
+                        <div class = "paymentRow">
+                            <p>Mô tả</p>
+                            <p class="paymentRowBold">Thanhtoancoc_BVĐKQT T-TYPH</p>
+                        </div>
+                        <hr>
+                        <div class = "paymentRow">
+                            <p>Số tiền</p>
+                            <p class="paymentRowBold">100.000đ</p>
+                        </div>
+                         <div class = "paymentRow">
+                            <input type = "submit" value = "Hoàn tất">
+                            <div class="time">
+                                <p id="timer"><script type="text/javascript">countDown();</script></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
