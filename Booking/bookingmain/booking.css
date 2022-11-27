@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root{
+	--primary: #1691e2;
+	--secondary: #E5F7FF;
+	--thirty: #b9e9fc;
+	--white: #fff;
+	--next-btn-hover: #05219e;
+	--back-btn-hover: #bcc2c2;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+body{
+	background: linear-gradient(-180deg, var(--white) , var(--primary) );
+	height: 100%;
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+/* --------Note------------------------------------------------------------------------------------ */
+.bookingNote{
+	width: 100%;
+	max-width: 700px;
+	margin: 20px auto 0;
+}
+.bookingNote h1{
+	color: var(--primary);
+	text-align: center;
+}
+.bookingNoteBold{
+	color: var(--primary);
+	font-style: italic;
+	font-weight: bold;
+}
+/* --------Form------------------------------------------------------------------------------------- */
+.bookingTtyph{
+	width: 100%;
+	max-width: 700px;
+	background: var(--white);
+	margin: 20px auto 0;
+	border-radius: 25px;
+	box-shadow: 5px 5px 10px var(--primary);
+	padding: 25px 30px;
+}
+.bookingContainer{
+	margin-bottom: 35px;
+}
+.bookingContainer h2{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/* -----------------header form--------------- */
+.headerBooking {
+	margin-bottom: 35px;
+	display: flex;
+	justify-content: center;
+}
+.headerBooking ul{
+	display: flex;
+}
+.headerBooking li{
+	margin-right: 50px;
+	position: relative;
+}
+
+.headerBooking  li:last-child{
+	margin-right: 0;
+}
+.headerBooking p{
+	width: 50px;
+	height: 50px;
+	background: var(--secondary);
+	color: var(--white);
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+}
+.headerBooking  li.active p{
+	background: var(--primary);
+}
+/* .inputWrap{
+	 max-width: 100%; 
+	margin: 0 auto 20px;
+}  */
+/* ------------input---------------------------------------------------------------------------------- */ 
+.bookingType{
+	display: flex;
+    justify-content: space-between;
+	/* flex-wrap: wrap; */
+	margin-top: 15px;
+	margin-bottom: 30px;
+ } 
+.bookingInput{
+	margin-right: 15px;
+	/* width: calc(100% / 2 - 20px); */
+}     
+#selectKhamThuong {
+	width: 100%;
+}       
+#selectKhamDichVu {
+	width: 100%;
+}
+.bookingInput {
+	border: 2px solid var(--thirty);
+	border-radius: 7px;
+	padding: 10px;
+	display: block;
+	width: 100%;	
+	font-size: 16px;
+	transition: 0.5s ease;
+}
+.category{
+	display: flex;
+	width: 80%;
+	margin: 15px 0 ;
+	justify-content: space-between;
+}
+.category label{
+	display: flex;
+	/* align-items: center; */
+	cursor: pointer;
+}
+.dot{
+   height: 18px;
+   width: 18px;
+   border-radius: 50%;
+   margin-right: 10px;
+   background: #d9d9d9;
+   border: 5px solid transparent;
+   transition: all 0.3s ease;
+}
+#dot1:checked ~ .category label .one,
+#dot2:checked ~ .category label .two{
+	background: var(--primary);
+	border-color: var(--secondary);
+}
+ input[type="radio"]{
+	display: none;
+  }
+/* -----------------------------button----------------------------------------------------------------- */
+.buttonWrap{
+	width: 450px;
+	/* max-width: 100%; */
+	margin: 0 auto;
+}
+.buttonCommon {
+	display: flex;
+	justify-content: space-between;
+}
+.buttonBooking1{
+	justify-content: flex-end;
+}
+.buttonCommon  button{
+	border: none;
+	padding: 12px 15px;
+	background: var(--primary);
+	color: var(--white);
+	width: 135px;
+	justify-content: center;
+	display: flex;
+	/* align-items: center; */
+	font-size: 16px;
+	border-radius: 5px;
+	transition: 0.5s ease;
+	cursor: pointer; /* trỏ tay */
+}
+.buttonNext:hover, .buttonDone:hover{
+	background: var(--next-btn-hover);
+}
+.buttonBack:hover{
+	background: var(--back-btn-hover);
+}
+/* --------------------notify---------------------------------------------- */
+.notifyWrap{
+	position: fixed;
+	top: 0;
+	/* left: 0; */
+	width: 100%;
+	height: 100vh;
+	visibility: hidden;
+}
+.notifyWrap.active{
+	visibility: visible;
+}
+.notifyShadow{
+	position: absolute;
+	/* top: 0; */
+	/* left: 0; */
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	/* opacity: 0; */
+	transition: 0.2s ease;
+}
+.successWrap{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-800px);
+	background: var(--white);
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	transition: 0.5s ease;
+}
+.notifyIcon{
+	margin-right: 20px;
+	width: 50px;
+	height: 50px;
+	background: var(--primary);
+	color: var(--white);
+	border-radius: 50%;
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+	font-size: 32px;
+	font-weight: 700;
+}
+.notifyWrap.active .successWrap{
+	transform: translate(-50%,-50%);
+}
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+}
+form .category{
+    width: 100%;
+}
+.content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.user-details::-webkit-scrollbar{
+    width: 5px;
+}
+}
+@media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+}
+}
+
+/* --payment-------------------------------------------------------------- */
+.bankImg{
+	margin: 5px 8px;
+	width: 180px;
+	height: 100px;
+}
+.walletImg{
+	width: 180px;
+	height: 60px;
+	margin: 5px 8px;
+}
+.listPayment{
+	/* padding: 0 18px; */
+	display: none;
+	background-color: var(--secondary);
+}
+.buttonPayment{
+	font-size: 16px;
+	background-color: var(--white);
+	padding: 18px;
+	width: 100%;
+	border: 2px solid var(--thirty);
+	border-radius: 10px;
+	text-align: left;
+	outline: none;
+	margin-top: 15px;
+  }
+   .buttonPayment:hover {
+	background-color: var(--next-btn-hover);
+	color: var(--white);
+  }

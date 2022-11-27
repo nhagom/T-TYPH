@@ -5,12 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Bank Payment</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="./payment.css">
         <script src="./payment.js"></script>
     </head>
     <body>
         <section class = "paymentBanner">
             <h2>CỔNG THANH TOÁN</h2>
+            <div class="paymentTotal">
+                <div class="paymentTotalInfor">
+                    <p>Mã đơn hàng : <span><b>YMO2211221052</b></span> </p>
+                    <p>Số tiền : <span><b>100.000đ</b></span></p>
+                </div>
+                <!-- <div class="time">
+                    <p id="timer"><script type="text/javascript">countDown();</script></p>
+                </div> -->
+                <div class="paymentTotalInfor">
+                    <p id="timer"><script type="text/javascript">countDown();</script></p>
+                </div>
+            </div>
             <div class = "paymentContainer">
                 <div class = "paymentQR">
                     <h3>Quét mã QR để thanh toán</h3>
