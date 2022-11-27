@@ -1,0 +1,27 @@
+.container{
+    margin: 10px 320px;
+}
+.ngay{
+    font-style: italic;
+    color: rgba(97, 93, 93, 0.751);
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p, ul, li{
+    color: rgb(86, 85, 85);
+}
+h4{
+    color: rgb(93, 91, 91);
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+h3, h2{
+    color: rgba(14, 14, 123, 0.916);
+}
+span{
+    font-weight: bold;
+}
+#anKieng{
+    height: 65vh;
+}
