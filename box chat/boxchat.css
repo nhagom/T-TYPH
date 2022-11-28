@@ -5,8 +5,8 @@
 }
 
 *, html {
-    --primaryGradient: linear-gradient(93.12deg, #581B98 0.52%, #9C1DE7 100%);
-    --secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%, #9C1DE7 99.69%);
+    --primaryGradient: linear-gradient(93.12deg, #28AADC 0.52%, #3080c2 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #28AADC -2.14%, #3080c2 99.69%);
     --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
     --light: 300;
@@ -14,7 +14,7 @@
     --semiBold: 600;
     --extraLight: 300;
     --italic: 300;
-    --primary: #581B98;
+    --primary: #28AADC;
 }
 
 /* 300;0,400;0,600;1,300 */
@@ -47,6 +47,7 @@ body {
     border-top-right-radius: 20px;
     box-shadow: var(--primaryBoxShadow);
 }
+
 
 .chatbox__heading--header {
     font-size: 1.2rem;
@@ -95,10 +96,11 @@ body {
 }
 
 .chatbox__footer input {
+    width: 85%;
     border: none;
     padding: 10px 10px;
     border-radius: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 .chatbox__send--footer {

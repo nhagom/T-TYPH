@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/chat.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./assets/css/typing.css">
+    <link rel="stylesheet" href="./boxchat_assets/css/chat.css">
+    <link rel="stylesheet" href="./boxchat.css">
+    <link rel="stylesheet" href="./boxchat_assets/css/typing.css">
     <title>Chatbox</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container_chatbox">
         <div class="chatbox">
             <div class="chatbox__support">
                 <div class="chatbox__header">
@@ -31,6 +32,9 @@
                         <div class="messages__item messages__item--operator">
                             Hãy hướng dẫn tôi đặt lịch khám?
                         </div>
+                        <div class="messages__item messages__item--operator">
+                            Bệnh viện có chấp nhận sử dụng bảo hiểm y tế không?
+                        </div>
                         <div class="messages__item messages__item--typing">
                             <span class="messages__dot"></span>
                             <span class="messages__dot"></span>
@@ -39,9 +43,8 @@
                     </div>
                 </div>
                 <div class="chatbox__footer">
-                    <img src="./images/icons/emojis.svg" alt="">
-                    <input type="text" placeholder="Write a message...">
-                    <p class="chatbox__send--footer">Send</p>
+                    <input type="text" placeholder="Nhập nội dung...">
+                    <p class="chatbox__send--footer">Gửi</p>
                 </div>
             </div>
             <div class="chatbox__button">
@@ -49,7 +52,7 @@
             </div>
         </div>
     </div>
-    <script src="./assets/js/Chat.js"></script>
-    <script src="./app.js"></script>
+    <script src="./boxchat_assets/js/Chat.js"></script>
+    <script src="./boxchat.js"></script>
 </body>
 </html>
