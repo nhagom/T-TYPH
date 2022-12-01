@@ -1,4 +1,11 @@
 /* css form */
+html, body{
+  margin: 0;
+  padding: 0;
+}
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .form{
   height: 60vh;
   background-color: rgba(221, 245, 255, 0.5);
@@ -83,29 +90,54 @@ div.stars {
     font-family: FontAwesome;
 }
 
-/* css cho từng slide */
+
+/* css cho slideshow */
+.slider{
+  overflow: hidden;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .slides{
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  overflow: hidden;
-  position: relative;
-
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
 }
 
+/* css cho mỗi slide */
 .comment img{
   width: 50px;
   float: left ;
 }
-.comment{
+.slides > div{
+  flex-shrink: 0;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
   display: flex;
-  width: 22%;
+  border-radius: 10px;
+  width: 250px;
   padding: 10px;
   border: 2px solid rgba(3, 149, 181, 1);
   border-radius: 8px;
   box-shadow: 5px 5px 5px gray;
   min-width: 170px;
-  margin: 10px 5px;
+  margin: 10px 20px;
+  background-color: rgba(241, 247, 253, 1);
 }
 .avatar{
   height: 100%;
@@ -125,25 +157,5 @@ div.stars {
 }
 .sao{
   margin: 5px 0px;
-}
-
-/* css cho slideshow */
-.container{
-  overflow: hidden;
-  position: relative;
-}
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
 

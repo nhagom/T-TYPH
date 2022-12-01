@@ -121,7 +121,6 @@ hr{
  .slides > div {
     flex-shrink: 0;
     width: 300px;
-    /* height: 200px; */
     margin: 10px;
     background: rgba(236, 235, 235, 0.968);
     transform-origin: center center;
