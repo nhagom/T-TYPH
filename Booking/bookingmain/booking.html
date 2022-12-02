@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bank Payment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./booking.css">
+</head>
+<body>
+<div class="bookingNote">
+	<div >
+		<h1>ĐĂNG KÝ KHÁM BỆNH</h1> <br>
+	</div>
+	<div >
+		<p >Quý khách hàng có nhu cầu <span class="bookingNoteBold">đặt hẹn khám tại Bệnh viện Đa khoa Quốc tế T-TYPH</span>, xin vui lòng thực hiện theo hướng dẫn:</p> 
+		<ul > 
+			<li >Đặt hẹn bằng cách gọi tổng đài Chăm sóc khách hàng tại số <span class="bookingNoteBold">(+84) 862 228 2288</span> (Bệnh viện Đa khoa Quốc tế T-TYPH) </li> 
+			<li >Đặt hẹn trực tuyến bằng cách <span class="bookingNoteBold">điền thông tin vào mẫu</span> bên dưới.</li> 
+			<li >Xin lưu ý, trong các <span class="bookingNoteBold">trường hợp khẩn cấp</span>, quý khách vui lòng <span class="bookingNoteBold">đến trực tiếp</span> Bệnh viện Đa khoa Quốc tế T-TYPH</li> 
+		</ul>
+	</div>
+</div>
+<div class="bookingTtyph">
+	<div class="headerBooking">
+		<ul>
+			<li class="active booking1Progessbar">
+				<div>
+					<p>1</p>
+				</div>
+			</li>
+			<li class="booking2Progessbar">
+				<div>
+					<p>2</p>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+	<div class="bookingContainer">
+		<div class="booking1">
+			<h2>ĐẶT LỊCH</h2>
+			<form id="bôForm">
+				<div class="inputWrap" >
+					<input type="radio" name="bookingService" id="dot1" onclick="khamThuong()" >
+					<input type="radio" name="bookingService" id="dot2" onclick="khamDichVu()" >
+					<label>Chọn loại dịch vụ khám</label>
+					<div class="category">
+						<label for="dot1">
+							<span class="dot one"></span>
+							<span>Khám thường</span>
+						</label>
+						<label for="dot2">
+							<span class="dot two"></span>
+							<span>Khám dịch vụ</span>
+						</label>
+					</div>
+				</div> <br>
+				<div class="inputWrap">
+					<label>Chọn Chuyên khoa/ Gói khám</label>
+					<div class="bookingType " >
+						<select class="bookingInput" id="selectKhamThuong">
+							<option value="Chọn chuyên khoa" selected>Chọn chuyên khoa</option>
+							<option value="Khoa sản">Khoa sản</option>
+							<option value="Khoa nội hô hấp">Khoa nội hô hấp</option>
+							<option value="Khoa tiêu hóa - gan - mật - tụy">Khoa tiêu hóa - gan - mật - tụy</option>
+							<option value="Khoa cơ xương khớp">Khoa cơ xương khớp</option>
+							<option value="Khoa tai mũi họng">Khoa tai mũi họng</option>
+							<option value="Khoa ung bướu">Khoa ung bướu</option>
+							<option value="Khoa nhi">Khoa nhi</option>
+							<option value="Khoa dược">Khoa dược</option>
+							<option value="Khoa hồi sức,cấp cứu">Khoa hồi sức,cấp cứu</option>
+							<option value="Khoa nội tổng hợp">Khoa nội tổng hợp</option>
+						</select>
+						<select class="bookingInput" id="selectKhamDichVu">
+							<option value="Chọn gói khám" selected>Chọn gói khám</option>
+							<option value="Khám tổng quát">Khám tổng quát</option>
+							<option value="Tầm soát ung thư toàn diện">Tầm soát ung thư toàn diện</option>
+							<option value="Tầm soát ung thư phổi">Tầm soát ung thư phổi</option>
+							<option value="Tầm soát ung thư cổ tử cung">Tầm soát ung thư cổ tử cung</option>
+							<option value="Tầm soát ung thư gan ">Tầm soát ung thư gan </option>
+							<option value="Tầm soát ung thư hệ tiêu hóa">Tầm soát ung thư hệ tiêu hóa</option>
+						</select>					
+					</div>
+				</div>
+				<div class="inputWrap">
+					<label >Chọn ngày/giờ khám</label>
+					<div class="bookingType">
+						<input class="bookingInput" type="date" >
+						<input class="bookingInput" type="time" step="900" value="07:00">
+					</div>
+				</div> 
+				<div class="inputWrap">
+					<label >Vui lòng nhập vấn đề về sức khỏe:</label> 
+					<div class="bookingType">
+						<textarea class="bookingInput" rows="10" placeholder="Nhập rõ triệu chứng bệnh"></textarea> 
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="booking2" style="display: none;">
+			<h2>THANH TOÁN</h2>
+			<div>
+				<div><i><span style="color: red;">*</span> Khách hàng khi khám bệnh tại Bệnh viện Đa khoa Quốc tế T-TYPH phải thanh toán 100.000 VNĐ để đặt cọc cho lịch khám chữa bệnh.</i> <br> <br></div>
+				<form>
+					<label>Phương thức thanh toán</label>
+					<button type="button" class="buttonPayment">Tài khoản ngân hàng / Internet Banking</button>
+					<div class="listPayment">
+						<a href="../thanh toán/bankPayment.html" target="_blank" title="BIDV">
+							<img class="bankImg" src="./BankImg/bidvbank.jpg">
+						</a>
+						<a href="../thanh toán/bankPayment.html" target="_blank" title="Agribank">
+							<img class="bankImg" src="./BankImg/Agribank.jpg">
+						</a>
+						<a href="../thanh toán/bankPayment.html" target="_blank" title="MB Bank">
+							<img class="bankImg" src="./BankImg/MB.jpg">
+						</a>
+						<a href="../thanh toán/bankPayment.html" target="_blank" title="Vietcombank">
+							<img class="bankImg" src="./BankImg/Vietcombank.jpg">
+						</a>
+						<a href="../thanh toán/bankPayment.html" target="_blank" title="VietinBank">
+						<img class="bankImg" src="./BankImg/VietinBank.jpg">
+						</a>
+						<a href="../thanh toán/bankPayment.html" target="_blank" title="Sacombank">
+							<img class="bankImg" src="./BankImg/sacombank.png">
+						</a>
+					</div>
+					<button type="button" class="buttonPayment">Ví điện tử</button>
+					<div class="listPayment">
+						<a href="../thanh toán/MoMoPayment.html" target="_blank" title="MoMo">
+							<img class="walletImg" src="./eWallet/momo.png" >
+						</a>
+						<a href="../thanh toán/ZaloPayPayment.html" target="_blank" title="Zalo Pay">
+							<img class="walletImg" src="./eWallet/zalopay.png" >
+						</a>
+						<a href="../thanh toán/VNPayPayment.html" target="_blank" title="Zalo Pay">
+							<img class="walletImg" src="./eWallet/vnpay.png" >
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="buttonWrap">
+		<div class="buttonCommon buttonBooking1">
+			<button type="submit" class="buttonNext">Thanh toán </button>
+		</div>
+		<div class="buttonCommon buttonBooking2" style="display: none;">
+			<button type="submit" class="buttonBack">Quay lại</button>
+			<button type="submit" class="buttonDone">Hoàn tất </button>
+		</div>
+	</div>
+</div>
+<div class="notifyWrap">
+	<div class="notifyShadow"></div>
+	<div class="successWrap">
+		<span class="notifyIcon">✔</span>
+		<p>Đặt lịch thành công</p>
+	</div>
+</div>
+<script src="./booking.js"></script>
+</body>
+</html>
