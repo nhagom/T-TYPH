@@ -4,20 +4,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Filter And Search</title>
     <link rel="stylesheet" href="./timkiem.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet"/>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="input">
+      <input type="search" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    </div>
+<ul id="myUL">
+  <li>
+    <a href="../Tintuc/dau_L.html">
+      <img class="imgSearch" src="../image/dau-lung-ben-phai-la-benh-gi.jpg" alt="Không tìm thấy hình ảnh">
+      <p>Đau lưng bên phải là bệnh gì? Triệu chứng, chẩn đoán và điều trị</p>
+    </a>
+  </li>
+  <li>
+    <a href="../Tintuc/DieuTriRungNhi.html">
+      <img class="imgSearch" class="imgSearch" src="../image/dieu-tri-rung-nhi.jpg" alt="Không tìm thấy hình ảnh">
+      <p>3 phương pháp điều trị rung nhĩ hiệu quả hiện nay</p>
+    </a>
+  </li>
+  <li>
+    <a href="../Tintuc/huyetApThap.html">
+      <img class="imgSearch" src="../image/ha-huyet-ap.jpg" alt="Không tìm thấy hình ảnh">
+      <p>Huyết áp thấp có nguy hiểm đến cơ thể không?</p>
+    </a>
+  </li>
+  <li>
+    <a href="../Tintuc/kiengAnGi.html">
+      <img class="imgSearch" src="../image/suy-gian-tinh-mach-kieng-an-gi.jpg" alt="Không tìm thấy hình ảnh">
+      <p>Bị suy giãn tĩnh mạch kiêng ăn gì và ăn gì? 7 thực phẩm siêu tốt</p>
+    </a>
+  </li>
+  <li>
+    <a href="../Tintuc/ngoaiTamThuThat.html">
+      <img class="imgSearch" src="../image/dieu-tri-ngoai-tam-thu-that.jpg" alt="Không tìm thấy hình ảnh">
+      <p>Ngoại tâm thu thất: Nguyên nhân, triệu chứng, chẩn đoán, phòng ngừa</p>
+    </a>
+  </li>
+  <li>
+    <a href="../Tintuc/tietMoHoi.html">
+      <img class="imgSearch" src="../image/Tang-tiet-mo-hoi.jpg" alt="Không tìm thấy hình ảnh">
+      <p>Tăng tiết mồ hôi: Nguyên nhân, triệu chứng, điều trị và phòng ngừa</p>
+    </a>
+  </li>
+</ul>
+
+    <!-- ---------------------------------- -->
+    <!-- <div class="wrapper">
       <div id="search-container">
         <input
           type="search"
           id="search-input"
-          placeholder="Search product name here.."
+          placeholder="Tìm kiếm"
         />
-        <button id="search">Search</button>
+        <button id="search" onclick="load()"> <i class="bi bi-search"></i></button>
       </div>
       <div id="products"></div>
-    </div>
-
+    </div> -->
     <script src="./timkiem.js"></script>
   </body>
 </html>
