@@ -57,4 +57,18 @@ a{
 .bi-check-circle-fill{
     color: rgba(3, 137, 188, 1);
 }
+.banner{
+    width: 100%;
+    text-align: center;
+}
+.banner img {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.animate-fading{width:100%; animation:fading 10s infinite}
+@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+
+
 

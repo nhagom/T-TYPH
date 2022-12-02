@@ -12,6 +12,12 @@
     />
 </head>
 <body>
+    <div class="banner">
+        <img class="mySlides animate-fading" src="./hinhanh/1690.jpg" alt="">
+        <img class="mySlides animate-fading" src="./hinhanh/16904.jpg" alt="">
+        <img class="mySlides animate-fading" src="./hinhanh/16903.jpg" alt="">
+        <img class="mySlides animate-fading" src="./hinhanh/16902.webp" alt="">
+    </div>
     <h1>Dịch vụ khám thường</h1>
     <div class="container">
         <div class="left">
@@ -114,5 +120,21 @@
             </div>
         </div>
     </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 6000);    
+        }
+    </script>
+    
 </body>
 </html>
