@@ -24,21 +24,6 @@ h2{
     padding: 20px;
     margin: 50px;
 }
-.paymentTotal{
-    display: flex;
-    justify-content: space-between;
-    
-    flex-wrap: wrap;
-    /* max-width: 850px; */
-}
-.paymentTotalInfor{
-    /* padding: 0px 50px; */
-    margin: 0px 50px;
-    width: 250px;
-}
-/* #timer{
-    text-align: right;
-} */
 .paymentContainer{
     display: grid;
     grid-template-columns: 420px 420px;
@@ -94,3 +79,14 @@ form input:hover{
         width: 100vw;
     }
 }
+   @media (max-width: 500px) {
+    .modal {
+      padding: 10px;
+      width: 80%;
+    }   
+  
+    .btns > button {
+      font-size: smaller;
+    }
+   }
+
