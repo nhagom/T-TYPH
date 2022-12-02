@@ -1,0 +1,50 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.row{
+    display: flex;
+}
+.avatar{
+    width: 10%;
+    text-align: right;
+}
+.avatar img {
+    width: 50%;
+}
+.name{
+    font-weight: bold;
+    padding-top: 20px;
+}
+.editProfile{
+    width: 10%;
+    text-align: right;
+}
+.editProfile img {
+    width: 20%;
+}
+.info {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+}
+.info a{
+    text-decoration: none;
+    color: #0395b5;
+    font-weight: bold;
+}
+.form {
+    text-align: center;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.thongTin {
+    margin-bottom: 20px;
+    color: #0395b5;
+    font-size: 20px;
+}
+.form__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

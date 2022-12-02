@@ -1,25 +1,24 @@
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
-}
-.header {
-}
+} */
+
 h2 {
   font-size: 30px;
-  font-family: "Nunito", serif;
+  /* font-family: "Nunito", serif; */
   text-shadow: 0px 0px 3px black;
   height: fit-content;
   margin-bottom: 10px;
 }
 h4 {
   font-weight: normal;
-  font-family: "Nunito", serif;
+  /* font-family: "Nunito", serif; */
   height: fit-content;
   font-size: 18px;
   margin-top: -5px;
 }
-.container {
+.header__container {
   display: flex;
   flex-direction: row;
   height: 120px;
@@ -28,7 +27,7 @@ h4 {
   background-color: #d2f2ff;
   min-width: 760px;
 }
-.logo {
+.header__logo {
   /* width: 76px;
   height: 90px; */
   position: absolute;
@@ -38,34 +37,35 @@ h4 {
   width: 10%;
   /* flex: 1; */
 }
-img {
+img.header__maQR {
   width: 100%;
   height: 120px;
-  margin: 0;
 }
-img.logoo {
+img.header__logoo {
   width: 100%;
   height: 150px;
   min-width: 150px;
+  margin: 0;
+
 }
 
-.slogan {
+.header__slogan {
   width: 40%;
   text-align: center;
   min-width: 600px;
   position: absolute;
   left: 130px;
 }
-.search {
+.header__search {
   width: 25%;
   padding: 0 20px;
   position: relative;
   left: 720px;
 }
-.form-search {
+.header__form-search {
   width: 100%;
 }
-.form-search input {
+.header__form-search input {
   border: 0;
   font-size: 14px;
   color: #012970;
@@ -77,19 +77,19 @@ img.logoo {
   height: 25px;
   min-width: 100px;
 }
-.form-search input:focus,
-.form-search input:hover {
+.header__form-search input:focus,
+.header__form-search input:hover {
   outline: none;
   box-shadow: 0 0 10px 0 rgba(1, 41, 112, 0.15);
   border: 1px solid rgba(1, 41, 112, 0.3);
 }
-.form-search button {
+.header__form-search button {
   border: 0;
   padding: 0;
   margin-left: -30px;
   background: none;
 }
-.form-search button i {
+.header__form-search button i {
   color: #012970;
 }
 
@@ -98,14 +98,14 @@ img.logoo {
   margin-top: 30px;
   height: 20px;
 } */
-.contact {
+.header__contact {
   width: 15%;
   margin-left: -50px;
   min-width: 250px;
   position: relative;
   left: 720px;
 }
-.phoneNumb {
+.header__phoneNumb {
   width: 100%;
   height: 20px;
   margin-top: 20px;
@@ -115,23 +115,23 @@ img.logoo {
   font-size: 20px;
   min-width: 200px;
 }
-span.phone {
+span.header__phone {
   color: #00adef;
   font-size: 20px;
   font-weight: bold;
   stroke: white;
   text-shadow: 0 0px 3px #000000;
 }
-.btn {
+.header__btn {
   height: 100px;
   margin-top: 20px;
   text-align: center;
 }
-.form-button {
+.header__form-button {
   width: 100%;
   /* min-width: 250px; */
 }
-.form-button button {
+.header__form-button button {
   color: white;
   width: 100px;
   height: 30px;
@@ -140,60 +140,60 @@ span.phone {
   font-weight: bold;
 }
 
-.btn_datLich {
+.header__btn_datLich {
   background-color: #df2849;
   text-align: center;
 }
-.btn_logIn {
+.header__btn_logIn {
   background-color: #28aadc;
   border: 2px #0395b5 solid;
   text-align: center;
 }
-.qrCode {
+.header__qrCode {
   min-width: 108px;
   position: absolute;
   right: 0;
 }
 @media screen and (max-width: 1254px) {
-  .qrCode {
+  .header__qrCode {
     display: none;
   }
-  .form-search input {
+  .header__form-search input {
     width: 50%;
   }
-  .contact {
+  .header__contact {
     left: 610px;
   }
 }
 @media screen and (max-width: 740px) {
-  .logo {
+  .header__logo {
     left: 10px;
   }
-  img.logoo {
+  img.header__logoo {
     width: 60px;
     margin-left: -20px;
   }
-  .slogan {
+  .header__slogan {
     left: 30px;
     top: 20px;
   }
-  .form-search {
+  .header__form-search {
     display: none;
   }
-  .contact {
+  .header__contact {
     left: 370px;
   }
-  .phoneNumb {
+  .header__phoneNumb {
     display: none;
   }
-  .form-button {
+  .header__form-button {
     display: flex;
     flex-direction: column;
   }
-  .btn_datLich {
+  .header__btn_datLich {
     display: flex;
   }
-  .btn_logIn {
+  .header__btn_logIn {
     display: flex;
   }
   h2 {

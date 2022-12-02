@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  .container{
+    overflow: hidden;
+    /* max-width: 1090px; */
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    height: 400px;
+    margin-top: 150px;
+    border: 1px black solid;
+  }
+  .container .slide-controls{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+  }
+  .slide-controls .slide{
+    height: 100%;
+    width: 100%;
+    color: #9a9a9a87;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .slide-controls label.verify{
+    color: #28aadc;
+  }
+  .slide-controls .slider-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 5px;
+    /* background-color: #28aadc;
+    background-image: linear-gradient(62deg, #28aadc 0%, #66caf2 100%); */
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #verify:checked ~ .slider-tab{
+    left: 50%;
+  }
+  #verify:checked ~ label.verify{
+    color: #9a9a9a87;
+    cursor: default;
+    user-select: none;
+  }
+    #signup:checked ~ label.signup{
+    color: #9a9a9a87;
+    cursor: default;
+    user-select: none;
+  }
+  #verify:checked ~ label.password{
+    color: #28aadc;
+  }
+  #password:checked ~ label.verify{
+    color: #28aadc;
+  }
+  #password:checked ~ label.password{
+    cursor: default;
+    user-select: none;
+  }
+  .container .form-inner {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+  }
+  .form-inner form{
+    width: 50%;
+  }
+  .form-inner form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  /* .form-inner form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  } */
+  .field{
+    text-align: center;
+    margin: 20px;
+  }
+  .OTP{
+    display: inline;
+    margin-left: 90px; 
+    text-align: center;
+    width: 100%;
+    min-width: 590px;
+  }
+  .OTP input{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    display: inline;
+  }
+  .tabContent {
+    display: none;
+  }
+  .tabContent.active {
+    display: block;
+  }

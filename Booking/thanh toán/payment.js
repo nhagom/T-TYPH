@@ -1,4 +1,4 @@
-	var count = 10;
+	var count = 180;
 	var redirect = "../bookingmain/booking.html";
 	function countDown(){
 		var timer = document.getElementById("timer");
@@ -10,3 +10,6 @@
 			window.location.assign('../bookingmain/booking.html');
 		}
 	}
+
+
+
