@@ -38,7 +38,7 @@
 .chatbox__header {
     position: sticky;
     top: 0;
-    background: orange;
+    background: #28AADC;
 }
 
 /* MESSAGES */
@@ -51,7 +51,7 @@
 }
 
 .messages__item {
-    background: orange;
+    background: #28AADC;
     max-width: 60.6%;
     width: fit-content;
 }

@@ -7,14 +7,14 @@ body {
 .none{
   display: none;
 }
-h2 {
+#tenBV {
   font-size: 30px;
   font-family: "Nunito", serif;
   text-shadow: 3px 5px 5px gray  ;
   height: fit-content;
   margin-bottom: 10px;
 }
-h4 {
+#sologan {
   font-weight: normal;
   font-family: "Nunito", serif;
   height: fit-content;
