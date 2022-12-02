@@ -1,0 +1,155 @@
+/* .body{
+    display: flex;
+    width: 100%;
+}
+.banner{
+    width: 50%;
+    display: flex;
+    height: 100%;
+    position: relative;
+    display: flex;
+  }
+  .banner img{
+    width: 70%;
+    height: 100%;
+    margin-left: 100px
+  }
+  .form-inner{
+    width: 50%;
+    overflow: hidden;
+    max-width: 690px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    height: 300px;
+
+  }
+  .form-inner form{
+    width: 70%;
+    height: 100%;
+    border: 1px black solid;
+
+  }
+  .forgetPW{
+    text-align: center;
+    color: #0389bc;
+    font-weight: bold;
+    font-size: 20px;
+    height: 50px;
+    padding-top: 100px;
+  }
+  .info{
+    width: 100%;
+    display: flex;
+  }
+  .info input{
+    height: 30px;
+    width: 80%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+  }
+  .info span {
+    width: 20%;
+    margin-top: 10px;
+    font-size: 14px;
+
+  }
+  span img {
+    width: 20px;
+  } */
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  html,body{
+    padding: 0;
+    margin: 0;
+    background-color: #f9fafb;
+    height: 100vh;
+  }
+    
+    .body{
+        display: flex;
+        height: 80%;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+      }
+      .banner{
+        width: 50%;
+        display: flex;
+        text-align: center ;
+        height: 80%;
+        position: relative;
+        min-width: 600px;
+        margin: auto;
+      }
+      .banner img{
+        width: 70%;
+        height: 100%;
+        margin: auto;
+      }
+      @media screen and (max-width:800px) {
+        .banner {display: none;}
+        .form-inner {margin: auto;}
+      }
+      .form-inner{
+        overflow: hidden;
+        width: 50%;
+        background: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+        height: 400px;
+        margin:auto
+      }
+      .form-inner .title{
+        width: 100%;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        color: #0389BC;
+      }
+      .form-inner form{
+        width: 100%;
+      }
+      .form-inner form .field{
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .form-inner form .field input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        padding-left: 15px;
+        border-radius: 5px;
+        border: 1px solid lightgrey;
+        border-bottom-width: 2px;
+        font-size: 17px;
+      }
+      .form-inner form .field input:focus{
+        border-color: #8783fc;
+      }
+      .signin-link{
+        text-align: center;
+        margin-top: 30px;
+      }
+      .signin-link a{
+        color: #0389BC;
+        text-decoration: none;
+      }
+      .signin-link a:hover{
+        text-decoration: underline;
+      }
+      .OTP{
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }

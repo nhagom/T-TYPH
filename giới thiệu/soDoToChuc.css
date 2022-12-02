@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  html,body{
+    padding: 0;
+    margin: 0;
+  }
+.mainContent {
+    min-width: 800px;
+}
+.textCenter {
+    padding-top: 150px;
+    text-align: center;
+}
+.textCenter h3 {
+    color: #0389bc;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.textCenter h4 {
+    font-size: 25px;
+}
+.giamDoc {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    margin-left: 100px;
+}
+.giamDoc .left {
+    width: 50%;
+}
+.giamDoc .left img {
+    width: 50%;
+    min-width: 200px;
+}
+.giamDoc .right {
+    width: 50%;
+}
+.giamDoc .right img {
+    width: 50%;
+    min-width: 200px;
+}
+.name {
+    color: #0389bc
+}
+.soDoToChuc {
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+.soDoToChuc img {
+    width: 50%;
+}
