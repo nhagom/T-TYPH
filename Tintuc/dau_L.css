@@ -28,7 +28,7 @@ span{
     height: 65vh;
 }
 .menuThongMinh{
-    width: 50px;
+    width: 40px;
     background-color: rgba(40, 169, 220, 0.464);
     /* text-align: center; */
     border-radius: 5px;
@@ -51,7 +51,9 @@ span{
 }
 .menuThongMinh:hover{
     background-color: rgb(40, 169, 220);
-    color: black;
+}
+.menuThongMinh:hover img{
+    opacity: 1;
 }
 .menuThongMinh:hover .noiDungMenu{
     display: block;
@@ -71,4 +73,24 @@ a{
 }
 img{
     width: 100%;
+}
+.lich{
+    font-style:normal;
+}
+@media screen and (max-width: 956px ){
+    .container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menuThongMinh{
+        position: fixed;
+        top: 15%;
+    }
+}
+.iconMenu{
+    opacity: 0.25;
+    width: 30px;
+    margin-top: 4px;
+    margin-left: 4px;
 }
