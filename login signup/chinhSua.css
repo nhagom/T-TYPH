@@ -1,0 +1,65 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.row{
+    display: flex;
+}
+.editProfile{
+    width: 10%;
+    text-align: right;
+}
+.editProfile img {
+    width: 20%;
+}
+.edit {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+}
+.edit a{
+    text-decoration: none;
+    color: #0395b5;
+    font-weight: bold;
+}
+.information{
+    display: flex;
+    width: 70%;
+    margin: auto;
+   }
+.hoSo {
+    width: 50%;
+   }
+.boSung {
+    width: 50%;
+   }
+.form__row{
+    padding-top: 5px;
+   }
+input, select{
+    width: 70%;
+    height: 36px;
+    font-size: 17px;
+   }
+span.redStar{
+    color: red;
+   }
+.update {
+    text-align: center;
+    width: 50%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.update button {
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #28aadc;
+    background-image: linear-gradient(62deg, #28aadc 0%, #66caf2 100%);
+    color: #fff;
+    border: 1px salmon solid;
+}
