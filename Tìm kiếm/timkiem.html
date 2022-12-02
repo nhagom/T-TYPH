@@ -2,13 +2,16 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Filter And Search</title>
+    <title>Search</title>
     <link rel="stylesheet" href="./timkiem.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet"/>
   </head>
   <body>
     <div class="input">
-      <input type="search" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+      <input type="search" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm..." title="Type in a text">
+      <label for="">
+        <i class="bi bi-search"></i>
+      </label>
     </div>
 <ul id="myUL">
   <li>
@@ -48,19 +51,6 @@
     </a>
   </li>
 </ul>
-
-    <!-- ---------------------------------- -->
-    <!-- <div class="wrapper">
-      <div id="search-container">
-        <input
-          type="search"
-          id="search-input"
-          placeholder="Tìm kiếm"
-        />
-        <button id="search" onclick="load()"> <i class="bi bi-search"></i></button>
-      </div>
-      <div id="products"></div>
-    </div> -->
     <script src="./timkiem.js"></script>
   </body>
 </html>
