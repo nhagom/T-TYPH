@@ -31,7 +31,7 @@
     font-size: 100%;
     position:fixed;
     right: 2%;
-    bottom: 10%;
+    bottom: 15%;
 }
 .chatbox__support {
     background: #f9f9f9;
@@ -129,7 +129,7 @@
 .chatbox__button button:focus,
 .chatbox__button button:visited {
     padding: 10px;
-    background: rgb(176, 215, 238);
+    background: #f9f9f9;
     border: none;
     outline: rgb(202, 234, 253);
     border-top-left-radius: 50px;

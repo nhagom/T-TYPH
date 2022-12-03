@@ -30,9 +30,150 @@
   <link rel="stylesheet" href="./assets/css/boxchat.css">
   <link rel="stylesheet" href="../box chat/boxchat_assets/css/typing.css">
 
+  <!--CSS header, footer-->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 </head>
 
 <body>
+
+    <header id="header" >
+      <div class="container">
+        <div class="logo_header">
+          <img src="./image/logo.png" alt="Logo" class="logoo" />
+        </div>
+        <div class="slogan">
+          <h2>BỆNH VIỆN ĐA KHOA QUỐC TẾ T-TYPH</h2>
+          <h4>"ĐIỀU TRỊ BẰNG TRÁI TIM - CHĂM SÓC BẰNG TẤM LÒNG"</h4>
+        </div>
+        <div class="search">
+          <form action="#" method="post" class="form-search">
+            <input
+              type="text"
+              readonly
+              onfocus="this.removeAttribute('readonly')"
+              placeholder="Tìm kiếm ..."
+            />
+            <button type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+        <div class="contact">
+          <div class="phoneNumb">
+            ☎<span class="phone"> (+84) 862 228 2288</span>
+          </div>
+          <div class="btn">
+            <form action="#" method="get" class="form-button">
+              <button class="btn_datLich" type="submit">
+                <i class="bi bi-calendar3"></i> ĐẶT LỊCH
+              </button>
+              <button class="btn_logIn" type="submit">ĐĂNG NHẬP</button>
+            </form>
+          </div>
+        </div>
+        <div class="qrCode">
+          <img
+            src="./image/314980762_1408401016358976_7193221243400698382_n.jpg"
+            class="maQR"
+          />
+        </div>
+      </div>
+    </header>
+    <header class="none" id="header_mb">
+      <div class="container">
+        <div class="header_mb-menu">
+          <img src="./image/menu-alt-64.webp" class="menu_image">
+        </div>
+        <div class="logo_header">
+          <img src="./image/logo.png" alt="Logo" class="logoo" />
+        </div>
+        <div class="slogan">
+          <h2>BỆNH VIỆN ĐA KHOA QUỐC TẾ T-TYPH</h2>
+          <h4>"ĐIỀU TRỊ BẰNG TRÁI TIM - CHĂM SÓC BẰNG TẤM LÒNG"</h4>
+        </div>
+        <!-- <div class="search">
+          <form action="#" method="post" class="form-search">
+            <input
+              type="text"
+              readonly
+              onfocus="this.removeAttribute('readonly')"
+              placeholder="Tìm kiếm ..."
+            />
+            <button type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div> -->
+        <div class="contact">
+          <!-- <div class="phoneNumb">
+            ☎<span class="phone"> (+84) 862 228 2288</span>
+          </div> -->
+          <div class="btn">
+            <form action="#" method="get" class="form-button">
+              <button class="btn_logIn" type="submit">ĐĂNG NHẬP</button> <br>
+              <button class="btn_datLich" type="submit">
+                <i class="bi bi-calendar3"></i> ĐẶT LỊCH
+              </button>
+              
+            </form>
+          </div>
+        </div>
+        <!-- <div class="qrCode">
+          <img
+            src="./image/314980762_1408401016358976_7193221243400698382_n.jpg"
+            class="maQR"
+          />
+        </div> -->
+      </div>
+    </header>
+    <div class="navbar none">
+      <a href="#trangchu">TRANG CHỦ</a>
+      <div class="dropdown">
+        <button class="nut_dropdown">GIỚI THIỆU ▼</button>
+        <div class="noidung_dropdown">
+          <a href="#">TẦM NHÌN, SỨ MỆNH</a>
+          <a href="#">SƠ ĐỒ TỔ CHỨC</a>
+          <a href="#">CHÍNH SÁCH BẢO MẬT</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="nut_dropdown">CHUYÊN KHOA ▼</button>
+        <div class="noidung_dropdown">
+          <a href="#">CẤP CỨU</a>
+          <a href="#">NỘI HÔ HẤP</a>
+          <a href="#">TIÊU HÓA</a>
+          <a href="#">CƠ XƯƠNG KHỚP</a>
+          <a href="#">TAI MŨI HỌNG</a>
+          <a href="#">UNG BƯỚU</a>
+          <a href="#">NHI</a>
+          <a href="#">DƯỢC</a>
+          <a href="#">SẢN</a>
+          <a href="#">NỘI TỔNG HỢP</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="nut_dropdown">DỊCH VỤ ▼</button>
+        <div class="noidung_dropdown">
+          <a href="#">KHÁM THƯỜNG</a>
+          <div class="flex_container">
+            <button class="nut_goikham">
+              GÓI KHÁM &nbsp;&nbsp;&nbsp;▶&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>
+            <div class="a">
+              <a href="#">KHÁM TỔNG QUÁT</a>
+              <a href="">TẦM SOÁT UNG THƯ TOÀN DIỆN</a>
+              <a href="">TẦM SOÁT UNG THƯ PHỔI</a>
+              <a href="">TẦM SOÁT UNG THƯ CỔ TỬ CUNG</a>
+              <a href="">TẦM SOÁT UNG THƯ GAN</a>
+              <a href="">TẦM SOÁT UNG THƯ HỆ TIÊU HÓA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#trangchu">TIN TỨC</a>
+      <a href="#trangchu">ĐÁNH GIÁ</a>
+    </div>
+
+  <div class="trangchu">
 <!-- ======= Mở đầu ======= -->
     <section id="baner" class="d-flex align-items-center">
       <div class="container">
@@ -386,7 +527,7 @@
           <p>68 Nguyễn Văn Hưởng, Thảo Điền, Quận 2, Thành phố Hồ Chí Minh</p>
         </div>
       <div >
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1w-o6B54pkUSfpc1Tc_AkqlmJ4fffQY8&ehbc=2E312F" width="100%" height="500px" boder="0"></iframe>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1w-o6B54pkUSfpc1Tc_AkqlmJ4fffQY8&ehbc=2E312F" width="100%" height="400px" boder="0"></iframe>
       </div>
     </section>
 <!-- End address Section -->
@@ -450,7 +591,53 @@
         </div>
     <script src="../box chat/boxchat_assets/js/Chat.js"></script>
     <script src="./assets/js/boxchat.js"></script>
-
+  </div>
+  <!--  Footer-->
+    <footer>
+      <div class="container_footer">
+        <div class="footer-left">
+          <p class="info">
+            <strong>Giấy SCNĐKDN: </strong> 0301867769 <br />
+            <strong>Ngày cấp: </strong> 30/10/2022 <br />
+            <strong>Nơi cấp: </strong> Sở kế hoạch và đầu tư TPHCM <br />
+            <strong>GPHĐ khám chữa bệnh </strong> số 205/BHYT <br />
+            <strong>GPHĐ do BYT </strong> cấp ngày 02/11/2022
+          </p>
+          <div class="logo_footer">
+            <img src="../image/logo.png" alt="Logo" class="logoo" />
+          </div>
+          <hr class="vertical" />
+        </div>
+        <div class="footer-middle" >
+          <table id="menu">
+            <tr>
+              <td><a href="./trangchu.html"><span class="bold"> TRANG CHỦ</span></a></td>
+              <td><a href="../Tintuc/tin_tuc.html"><span class="bold">TIN TỨC</span></a></td>
+            </tr>
+            <tr>
+              <td><a href="../giới thiệu/gioiThieu.html"><span class="bold">GIỚI THIỆU</span></a></td>
+              <td><a href="../danhgia/danhgia.html"><span class="bold">ĐÁNH GIÁ</span></a></td>
+            </tr>
+            <tr>
+              <td><a href="../chuyenKhoa/chuyenKhoa.html"><span class="bold"> CHUYÊN KHOA</span></a></td>
+              <td><a href="../box chat/boxchat.html"><span class="bold">HỖ TRỢ</span></a></td>
+            </tr>
+            <tr>
+              <td><a href="../dichvu/khamthuong/khamthuong.html"><span class="bold">DỊCH VỤ</span></a></td>
+              <td><a href="#"><span class="bold"> LIÊN HỆ</span></a></td>
+            </tr>
+          </table>
+          <hr class="vertical" />
+        </div>
+        <div class="footer-right">
+          <p class="contact_footer">
+            <i class="fa fa-map-marker"></i> &nbsp;&nbsp;&nbsp; Số 68, đường Nguyễn Văn Hưởng, phường Thảo Điền, TP Thủ Đức, TP HCM
+            <br />
+            <i class="fa fa-phone"></i> &nbsp;&nbsp;&nbsp;(+84) 862 228 2288 <br />
+            <i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp;Email: contact@ttyph.com.vn
+          </p>
+        </div>
+      </div>
+    </footer>
 </body>
-
 </html>

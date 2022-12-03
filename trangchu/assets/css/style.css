@@ -1,25 +1,31 @@
-body {
+.trangchu {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #444444;
+  padding: 0;
+  margin: 0;
 }
 
-a {
+.trangchu {
   color: #28AADC;
   text-decoration: none;
 }
 
-a:hover {
+.trangchu a:hover {
   color: #28AADC;
   text-decoration: none;
 }
 
+.trangchu 
 h1,
 h2
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.trangchu h4{
+  color: #28AADC;
 }
 
 /*--------------------------------------------------------------
