@@ -6,7 +6,7 @@ body{
   display: flex;
   flex-direction: row;
   background-color: #ddf5ff;
-  height: 120px;
+  height: fit-content;
   /* position: relative;
   bottom: 0px; */
   width: 100%;
@@ -86,9 +86,9 @@ p.contact_footer {
     font-size: 10px;
     line-height: 18px;
   }
-  .contact_footer{
+  /* .contact_footer{
     margin-bottom: 100px;
-  }
+  } */
 }
 @media screen and (max-width: 900px) {
   p.contact_footer{
@@ -101,9 +101,9 @@ p.contact_footer {
     font-size: 10px;
     line-height: 18px;
   }
-  .contact_footer{
+  /* .contact_footer{
     margin-bottom: 100px;
-  }
+  } */
 }
 .bold{
   font-weight: bold;
