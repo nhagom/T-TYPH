@@ -6,9 +6,15 @@ body{
   display: flex;
   flex-direction: row;
   background-color: #ddf5ff;
+<<<<<<< HEAD
   height: 120px;
   /* position: relative;
   bottom: 0px; */
+=======
+  height: 130px;
+  position: relative;
+  bottom: 0px;
+>>>>>>> 84218d79d66dda4e7858f3b242c1cd337890aa14
   width: 100%;
 }
 .footer-left {
@@ -36,6 +42,7 @@ img.logoo {
 hr.vertical_footer {
   width: 0px;
   height: 100px;
+  margin-left: 10px;
 }
 .footer-middle {
   display: flex;
@@ -72,17 +79,36 @@ p.contact_footer {
 }
 .footer_right{
   height: 100%;
+  text-align: center;
 }
 @media screen and (max-width: 1000px) {
   p.contact_footer{
     font-size: 15px;
-    line-height: 20px;
+    line-height: 25px;
     margin-top: 30px;
   }
   .footer-middle{display: none;}
   p.info_footer{
     font-size: 10px;
     line-height: 18px;
+  }
+  .contact_footer{
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  p.contact_footer{
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 20px;
+  }
+  .footer-middle{display: none;}
+  p.info_footer{
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .contact_footer{
+    margin-bottom: 100px;
   }
 }
 .bold{
