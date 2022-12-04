@@ -6,15 +6,9 @@ body{
   display: flex;
   flex-direction: row;
   background-color: #ddf5ff;
-<<<<<<< HEAD
   height: 120px;
   /* position: relative;
   bottom: 0px; */
-=======
-  height: 130px;
-  position: relative;
-  bottom: 0px;
->>>>>>> 84218d79d66dda4e7858f3b242c1cd337890aa14
   width: 100%;
 }
 .footer-left {
