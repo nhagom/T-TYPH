@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Đăng ký</title>
     <link rel="stylesheet" href="../header/header.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
@@ -13,47 +13,9 @@
     <link rel="stylesheet" href="./signup1.css">
   </head>
   <body>
-    <!-- <div class="header">
-      <div class="header__container">
-        <div class="header__logo">
-          <img src="../image/logo.png" alt="Logo" class="header__logoo" />
-        </div>
-        <div class="header__slogan">
-          <h2>BỆNH VIỆN ĐA KHOA QUỐC TẾ T-TYPH</h2>
-          <h4>"ĐIỀU TRỊ BẰNG TRÁI TIM - CHĂM SÓC BẰNG TẤM LÒNG"</h4>
-        </div>
-        <div class="header__search">
-          <form action="#" method="post" class="header__form-search">
-            <input
-              type="text"
-              readonly
-              onfocus="this.removeAttribute('readonly')"
-              placeholder="Tìm kiếm ..."
-            />
-            <button type="submit"><i class="bi bi-search"></i></button>
-          </form>
-        </div>
-        <div class="header__contact">
-          <div class="header__phoneNumb">
-            ☎<span class="header__phone"> (+84) 862 228 2288</span>
-          </div>
-          <div class="header__btn">
-            <form action="#" method="get" class="header__form-button">
-              <button class="header__btn_datLich" type="submit">
-                <i class="bi bi-calendar3"></i> ĐẶT LỊCH
-              </button>
-              <button class="header__btn_logIn" type="submit">ĐĂNG NHẬP</button>
-            </form>
-          </div>
-        </div>
-        <div class="header__qrCode">
-          <img src="../image/QRcode.jpg" class="header__maQR" />
-        </div>
-      </div>
-    </div> -->
     <div class="container">
         <div class="slide-controls">
-            <input type="radio" name="slide" id="verify" checked>
+            <input type="radio" name="slide" id="verify">
             <input type="radio" name="slide" id="password">
             <input type="radio" name="slide" id="profile">
             <label for="verify" class="slide verify">1. Xác thực</label>
@@ -62,17 +24,17 @@
             <div class="slider-tab"></div>
         </div>
         <div class="form-inner">
-            <form action="#" class="tabContent active" id="page1">
+            <form action="#" class="verify" id="page1">
                 <div class="field">
                     Nhập mã OTP vừa được gửi đến số 0914151627
                 </div>
                 <div class="OTP">
-                    <input type="text" class="number">
-                    <input type="text" class="number">
-                    <input type="text" class="number">
-                    <input type="text" class="number">
-                    <input type="text" class="number">
-                    <input type="text" class="number">
+                    <input type="number" class="number">
+                    <input type="number" class="number">
+                    <input type="number" class="number">
+                    <input type="number" class="number">
+                    <input type="number" class="number">
+                    <input type="number" class="number">
                 </div>
                 <div class="continue">
                     <button type="submit" class="tiepTuc">Tiếp tục</button>
@@ -81,7 +43,7 @@
                     Không nhận được mã OTP? <a href="#">Thử lại</a> 
                 </div>
             </form>
-            <form action="#" class="tabContent" id="page2">
+            <form action="#" class="password" id="page2">
                 <div class="thongBao">
                     Nhập mật khẩu để bảo vệ hồ sơ sức khỏe của bạn và đăng nhập những lần sau
                 </div>
@@ -92,12 +54,11 @@
                     <button class="taoMatKhau">Tạo mật khẩu</button>
                 </div>
             </form>
-            <form action="#" class="tabContent" id="page3">
+            <form action="#" class="profile" id="page3">
                 <div class="inform">
                     Tạo hồ sơ y tế đầy đủ thông tin sẽ hỗ trợ việc khám chữa bệnh của bạn tốt hơn
                 </div>
-                <div class="information">
-
+            <div class="information">
                 
                 <div class="hoSo">
                     <div class="form__row">
@@ -109,7 +70,6 @@
                     <div class="form__row">
                         <input type="text" required>
                     </div>
-                    <br>
                     <div class="form__row">
                         <label>Giới tính <span class="redStar">*</span></label>
                     </div>
@@ -119,14 +79,12 @@
                             <option value="Nam">Nữ</option>
                         </select>
                     </div>
-                    <br>
                     <div class="form__row">
                         <label>Ngày sinh <span class="redStar">*</span></label>
                     </div>
                     <div class="form__row">
                         <input type="date" required>
                     </div>
-                    <br>
                     <div class="form__row">
                         <label>Số CMND/CCCD <span class="redStar">*</span></label>
                     </div>
@@ -144,34 +102,47 @@
                     <div class="form__row">
                         <input type="text">
                     </div>
-                    <br>
                     <div class="form__row">
                         <label>Tỉnh / Thành phố</label>
                     </div>
                     <div class="form__row">
                         <select name="" id=""></select>
                     </div>
-                    <br>
                     <div class="form__row">
                         <label>Quận / Huyện</label>
                     </div>
                     <div class="form__row">
                         <select name="" id=""></select>
                     </div>
-                    <br>
                     <div class="form__row">
                         <label>Phường / Xã</label>
                     </div>
                     <div class="form__row">
                         <select name="" id=""></select>
                     </div>
-                    <br>
                 </div>
             </div>
+            <div class="create">
+                <button class="taoHoSo">Tạo hồ sơ</button>
+            </div>
+
             </form>
         </div>
     </div>
     <script>
+        const verifyBtn = document.querySelector("button.tiepTuc");
+        const passwordBtn = document.querySelector("button.taoMatKhau")
+        // const profileBtn = document.querySelector(label.profile);
+        const verifyForm = document.querySelector("form.verify");
+        const passwordForm = document.querySelector("form.password");
+        verifyBtn.onclick = (()=>{
+            verifyForm.style.marginLeft = "-33%";
+        });
+        passwordBtn.onclick = (()=>{
+            passwordForm.style.marginLeft = "-33%";
+        })
+    </script>
+    <!-- <script>
         var buttons = document.getElementsByClassName('tiepTuc');
         var contents = document.getElementsByClassName('tabContent');
         function showContent(id) {
@@ -191,6 +162,7 @@
                 showContent(id);
             })
         }
-    </script>
+    </script> -->
   </body>
 </html>
+
