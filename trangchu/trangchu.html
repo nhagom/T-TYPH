@@ -25,9 +25,21 @@
   <!-- CSS-->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!--BOX CHAT-->
+  <link rel="stylesheet" href="../box chat/boxchat_assets/css/chat.css">
+  <link rel="stylesheet" href="./assets/css/boxchat.css">
+  <link rel="stylesheet" href="../box chat/boxchat_assets/css/typing.css">
+
+  <!--CSS header, footer-->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 </head>
 
 <body>
+
+  <div class="trangchu">
 <!-- ======= Mở đầu ======= -->
     <section id="baner" class="d-flex align-items-center">
       <div class="container">
@@ -381,7 +393,7 @@
           <p>68 Nguyễn Văn Hưởng, Thảo Điền, Quận 2, Thành phố Hồ Chí Minh</p>
         </div>
       <div >
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1w-o6B54pkUSfpc1Tc_AkqlmJ4fffQY8&ehbc=2E312F" width="100%" height="500px" boder="0"></iframe>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1w-o6B54pkUSfpc1Tc_AkqlmJ4fffQY8&ehbc=2E312F" width="100%" height="400px" boder="0"></iframe>
       </div>
     </section>
 <!-- End address Section -->
@@ -402,6 +414,96 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!--BOX CHAT-->
+          <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__content--header">
+                        <b><h4 class="chatbox__heading--header">Tư vấn đặt khám trực tuyến</h4></b>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div>
+                        <div class="messages__item messages__item--visitor">
+                            T-Typh xin chào!
+                        </div>
+                        <div class="messages__item messages__item--operator">
+                            Chào!
+                        </div>
+                        <div class="messages__item messages__item--visitor">
+                            Bạn cần chúng mình hỗ trợ vấn đề nào ạ.
+                        </div>
+                        <div class="messages__item messages__item--operator">
+                            Hãy hướng dẫn tôi đặt lịch khám?
+                        </div>
+                        <div class="messages__item messages__item--operator">
+                            Bệnh viện có chấp nhận sử dụng bảo hiểm y tế không?
+                        </div>
+                        <div class="messages__item messages__item--typing">
+                            <span class="messages__dot"></span>
+                            <span class="messages__dot"></span>
+                            <span class="messages__dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Nhập nội dung...">
+                    <b><p class="chatbox__send--footer">Gửi</p></b>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button>button</button>
+            </div>
+        </div>
+    <script src="../box chat/boxchat_assets/js/Chat.js"></script>
+    <script src="./assets/js/boxchat.js"></script>
+  </div>
+  <!--  Footer-->
+    <footer>
+      <div class="container_footer">
+        <div class="footer-left">
+          <p class="info">
+            <strong>Giấy SCNĐKDN: </strong> 0301867769 <br />
+            <strong>Ngày cấp: </strong> 30/10/2022 <br />
+            <strong>Nơi cấp: </strong> Sở kế hoạch và đầu tư TPHCM <br />
+            <strong>GPHĐ khám chữa bệnh </strong> số 205/BHYT <br />
+            <strong>GPHĐ do BYT </strong> cấp ngày 02/11/2022
+          </p>
+          <div class="logo_footer">
+            <img src="../image/logo.png" alt="Logo" class="logoo" />
+          </div>
+          <hr class="vertical" />
+        </div>
+        <div class="footer-middle" >
+          <table id="menu">
+            <tr>
+              <td><a href="./trangchu.html"><span class="bold"> TRANG CHỦ</span></a></td>
+              <td><a href="../Tintuc/tin_tuc.html"><span class="bold">TIN TỨC</span></a></td>
+            </tr>
+            <tr>
+              <td><a href="../giới thiệu/gioiThieu.html"><span class="bold">GIỚI THIỆU</span></a></td>
+              <td><a href="../danhgia/danhgia.html"><span class="bold">ĐÁNH GIÁ</span></a></td>
+            </tr>
+            <tr>
+              <td><a href="../chuyenKhoa/chuyenKhoa.html"><span class="bold"> CHUYÊN KHOA</span></a></td>
+              <td><a href="../box chat/boxchat.html"><span class="bold">HỖ TRỢ</span></a></td>
+            </tr>
+            <tr>
+              <td><a href="../dichvu/khamthuong/khamthuong.html"><span class="bold">DỊCH VỤ</span></a></td>
+              <td><a href="#"><span class="bold"> LIÊN HỆ</span></a></td>
+            </tr>
+          </table>
+          <hr class="vertical" />
+        </div>
+        <div class="footer-right">
+          <p class="contact_footer">
+            <i class="fa fa-map-marker"></i> &nbsp;&nbsp;&nbsp; Số 68, đường Nguyễn Văn Hưởng, phường Thảo Điền, TP Thủ Đức, TP HCM
+            <br />
+            <i class="fa fa-phone"></i> &nbsp;&nbsp;&nbsp;(+84) 862 228 2288 <br />
+            <i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp;Email: contact@ttyph.com.vn
+          </p>
+        </div>
+      </div>
+    </footer>
 </body>
-
 </html>
