@@ -97,6 +97,10 @@ html, body{
     margin: 5px;
     width: 100px;
 }
+.acc {
+    width: 100px;
+    position: relative;
+}
 .btnAccount{
     background-color: rgba(255, 177, 177, 1);
     border-radius: 30px;
@@ -104,6 +108,36 @@ html, body{
     padding: 2px 6px 10px 4px;
     font-size: 30px;
     margin-left: 10px;
+}
+.acc:hover ul{
+    display: block;
+}
+.headBtn ul{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 150px;
+    z-index: 101;
+}
+.account li {
+    background-color: rgba(40, 170, 220, 0.85);
+    padding: 4px;
+    border: 1px solid white;
+    list-style: none;
+    position: relative;
+    font-weight: bold;
+}
+.account a{
+    color: white;
+}
+.account li:hover {
+    background-color: white ;
+    border: 1px solid rgba(40, 170, 220, 0.85) ;
+}
+.account li:hover a {
+    color: rgba(40, 170, 220, 0.85);
 }
 .headNavMobile {
     margin-top: auto;
@@ -157,7 +191,7 @@ html, body{
 }
 #menu > li {
     position: relative;
-    padding: 7px 3px 0 3px;
+    padding: 7px 5px 0 5px;
     border: 1px solid rgba(40, 170, 220, 1);
 }
 #menu > li > ul.subMenu {
@@ -240,7 +274,10 @@ html, body{
         width: 15%;
         position: absolute;
         right: 0;
-        top: 12px;
+        top: 0px;
+    }
+    .btnBooking {
+        margin-top: 0;
     }
     .headSearch {
         position: absolute;
@@ -323,12 +360,16 @@ html, body{
     .headBtn {
         position: absolute;
         right: 0;
+        top: 5px;
         flex-direction: column;
     }
-    .btnBooking, .btnLogin {
+    .btnBooking {
         font-size: 10px;
         width: 75px;
         padding: 4px;
+    }
+    .btnAccount {
+        font-size: 22px;
     }
     .headNavMobile{
         margin-left: 5px;
@@ -336,9 +377,12 @@ html, body{
     .headLogo {
         margin-left: 0;
     }
+    .headBtn ul {
+        top: 27px;
+    }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 540px) {
     .headName{
         width: 300px;
         margin-left: 5px;
@@ -348,8 +392,9 @@ html, body{
     }
     .headName h3 {
         font-size: 12px;
+        margin-right: 10px;
     }
-    .btnBooking, .btnLogin {
+    .btnBooking{
         font-size: 10px;
         width: 75px;
         padding: 4px;
@@ -357,11 +402,22 @@ html, body{
     .headerNav {
         font-size: 12px;
     }
+    .headBut {
+        flex-wrap: nowrap;
+        width: 5%;
+    }
+    .acc {
+        width: fit-content;
+    }
+    .headBtn ul {
+        top: 25px;
+    }
 }
 
 @media screen and (max-width: 390px) {
     .headName {
         width: 230px;
+        text-align: left;
     }
     .headName h1 {
         font-size: 11px;
@@ -369,10 +425,14 @@ html, body{
     .headName h3 {
         font-size: 8px;
     }
-    .btnBooking, .btnLogin {
-        font-size: 7px;
+    .btnBooking {
+        font-size: 8px;
         width: 60px;
         padding: 4px;
+    }
+    .btnAccount{
+        font-size: 18px;
+        margin-top: 5px;
     }
 }
 
