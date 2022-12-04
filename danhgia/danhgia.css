@@ -2,6 +2,7 @@
 html, body{
   margin: 0;
   padding: 0;
+  position: relative;
 }
 *{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,10 +12,13 @@ html, body{
   background-color: rgba(221, 245, 255, 0.5);
   padding: 10px;
 }
-h2{
+.form h2{
   text-align: center;
 }
-form{
+.cmt h2 {
+  text-align: center;
+}
+.form form{
   border: none;
   border-radius: 10px;
   background-color: white;
@@ -34,7 +38,7 @@ form{
 textarea{
   border: 1px solid gray;
 }
-::placeholder{
+.form ::placeholder{
   font-style: italic;
 }
 .submit{
@@ -158,4 +162,8 @@ div.stars {
 .sao{
   margin: 5px 0px;
 }
+.cmt {
+  padding-bottom: 10px;
+}
+
 

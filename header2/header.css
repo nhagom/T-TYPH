@@ -4,6 +4,9 @@ html, body{
 }
 .header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* position: fixed;
+    width: 100%;
+    top: 0; */
 }
 /* css head */
 .header button:hover {
