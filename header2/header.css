@@ -51,6 +51,9 @@ html, body{
     margin-top: auto;
     margin-bottom: auto;
 }
+.headSearch a{
+    color: black;
+}
 .headSearch form{
     background-color: white;
 }
