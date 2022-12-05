@@ -1,5 +1,6 @@
-body{
+.khamthuong{
     background-color:aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
     display: flex;
@@ -19,17 +20,17 @@ body{
     flex-direction: column;
     flex: 1;
 }
-h1{
+.khamthuong h1{
     color: rgba(3, 137, 188, 1);
     text-align: center;
 }
-ul{
+.container ul{
     list-style-type: none;
 }
-li{
+.container li{
     margin-bottom: 5px;
 }
-a{
+.container a{
     text-decoration: none;
     color: darkblue;
 }
@@ -50,7 +51,7 @@ a{
     }
 }
 @media screen and (max-width: 550px) {
-    ul {
+    .container ul {
         padding-inline-start: 5px;
     }
 }

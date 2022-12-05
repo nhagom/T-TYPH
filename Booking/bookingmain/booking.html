@@ -47,7 +47,6 @@
 				<label>Chọn Chuyên khoa/ Gói khám</label>
                 <div class="bookingType " >
 					<select class="bookingInput" id="selectKhamThuong" >
-						<option value="Chọn chuyên khoa" selected>Chọn chuyên khoa</option>
 						<option value="Khoa sản">Khoa sản</option>
 						<option value="Khoa nội hô hấp">Khoa nội hô hấp</option>
 						<option value="Khoa tiêu hóa - gan - mật - tụy">Khoa tiêu hóa - gan - mật - tụy</option>
@@ -56,10 +55,9 @@
 						<option value="Khoa ung bướu">Khoa ung bướu</option>
 						<option value="Khoa nhi">Khoa nhi</option>
 						<option value="Khoa dược">Khoa dược</option>							<option value="Khoa hồi sức,cấp cứu">Khoa hồi sức,cấp cứu</option>
-						<option value="Khoa nội tổng hợp">Khoa nội tổng hợp</option>
+						<option value="Khoa nội tổng hợp" selected>Khoa nội tổng hợp</option>
 					</select>
 					<select class="bookingInput" id="selectKhamDichVu">
-						<option value="Chọn gói khám" selected>Chọn gói khám</option>
 						<option value="Khám tổng quát">Khám tổng quát</option>
 						<option value="Tầm soát ung thư toàn diện">Tầm soát ung thư toàn diện</option>
 						<option value="Tầm soát ung thư phổi">Tầm soát ung thư phổi</option>
@@ -73,7 +71,17 @@
 					<label >Chọn ngày/giờ khám *</label>
 					<div class="bookingType">
 						<input class="bookingInput" type="date" >
-						<input class="bookingInput" type="time">
+						<input placeholder="07:00 - 08:00" class="bookingInput" list="listTime">
+						<datalist id="listTime" >
+							<option>07:00 - 08:00</option>
+							<option>08:00 - 09:00</option>
+							<option>09:00 - 10:00</option>
+							<option>10:00 - 11:00</option>
+							<option>13:00 - 14:00</option>
+							<option>14:00 - 15:00</option>
+							<option>15:00 - 16:00 </option>
+							<option>16:00 - 17:00</option>
+						</datalist>
 					</div>
 				</div> 
 				<div class="inputWrap">
@@ -122,8 +130,8 @@
 		</div>
     </div>
     <div class="buttonBooking">
-            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Quay lại</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Tiếp tục</button>
     </div>
 </form>
 

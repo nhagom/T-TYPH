@@ -49,18 +49,18 @@ html body{
 .banner img{
     width: 100%;
 }
-hr{
+.body hr{
     width: 100px;
     background-color: black;
     height: 3px;
     margin-bottom: 20px;
 }
-h2{
+.body h2{
     text-align: center;
     color:  rgba(40, 170, 220, 1);
     margin-bottom: 0;
 }
-h3{
+.body h3{
     color: rgba(40, 170, 220, 1);
 }
 .box:hover{
@@ -75,10 +75,10 @@ h3{
 .box:hover a{
     color: white;
 }
-a{
+.body a{
     text-decoration: none;
     color: black;
 }
-a:visited{
+.body a:visited{
     text-decoration: none;
 }

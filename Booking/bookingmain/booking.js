@@ -14,7 +14,7 @@ function showTab(n) {
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Hoàn tất";
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").innerHTML = "Tiếp tục";
   }
   //... và chạy một chức năng sẽ hiển thị chỉ báo bước chính xác:
   fixStepIndicator(n)
