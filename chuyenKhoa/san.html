@@ -4,11 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khoa sản</title>
+    <title>Khoa sản | Bệnh viện Đa Khoa T-Typh </title>
+    <link href="../trangchu/assets/img/Logo/T.png" rel="icon">
     <link rel="stylesheet" href="./chuyenKhoa.css">
+
+    <!-- Header -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../header1/header.css">
+    <script src="../header1/header.js"></script>
+
+    <!-- Footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+
+    <!-- Box chat -->
+    <link rel="stylesheet" href="../box chat/boxchat_assets/css/chat.css">
+    <link rel="stylesheet" href="../box chat/boxchat.css">
+    <link rel="stylesheet" href="../box chat/boxchat_assets/css/typing.css">
+
 </head>
 <body>
-        <div>
+    <div class="header">
+        <div class="headerContainer">
+            <div class="headNavMobile">
+                <button class="iconNav" onclick="showNav()">
+                    <img src="../image/menu-alt-64.webp" alt="">
+                </button>
+            </div>
+            <div class="headLogo">
+                <img src="../image_Tai/logo.png" alt="Logo">
+            </div>
+            <div class="headName">
+                <h1>BỆNH VIỆN ĐA KHOA QUỐC TẾ T-TYPH</h1>
+                <h3>"ĐIỀU TRỊ BẰNG TRÁI TIM - CHĂM SÓC BẰNG TẤM LÒNG"</h3>
+            </div>
+            <div class="headSearch">
+                <form action="#">
+                    <input type="text" placeholder="Tìm kiếm...">
+                    <a href="../Tìm kiếm/timkiem.html">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </form>
+            </div>
+            <div class="headBut">
+                <div class="headPhone">
+                    ☎<span class="phone"> (+84) 862 228 2288</span>
+                </div>
+                <div class="headBtn">
+                    <button class="btnBooking">
+                        <a href="../Booking/bookingmain/booking.html">
+                            <i class="bi bi-calendar3"></i> ĐẶT LỊCH
+                        </a>
+                    </button>
+                    <button class="btnLogin"><a href="../login signup/signIn.html">ĐĂNG NHẬP</a></button>
+                </div>
+            </div>
+            <div class="headQR">
+                <img src="../image_Tai/QRcode.jpg" alt="QR Code">
+            </div>
+        </div>
+        <div class="headerNav" id="myNav">
+            <form action="#">
+                <input type="text" placeholder="Tìm kiếm...">
+                <a href="../Tìm kiếm/timkiem.html">
+                    <i class="bi bi-search"></i>
+                </a>
+            </form>
+            <ul id="menu">
+                <li><a href="../trangchu/trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="#">GIỚI THIỆU ▼</a>
+                    <ul class="subMenu">
+                        <li><a href="../giới thiệu/gioiThieu.html">TẦM NHÌN, SỨ MỆNH</a></li>
+                        <li><a href="../giới thiệu/soDoToChuc.html">SƠ ĐỒ TỔ CHỨC</a></li>
+                        <li><a href="../giới thiệu/baoMat.html">CHÍNH SÁCH BẢO MẬT</a></li>
+                    </ul>
+                </li>
+                <li><a href="../chuyenKhoa/chuyenKhoa.html">CHUYÊN KHOA ▼</a>
+                    <ul class="subMenu">
+                        <li><a href="../chuyenKhoa/san.html">SẢN</a></li>
+                        <li><a href="../chuyenKhoa/noiHoHap.html">NỘI HÔ HẤP</a></li>
+                        <li><a href="../chuyenKhoa/tieuHoa.html">TIÊU HÓA</a></li>
+                        <li><a href="../chuyenKhoa/coXuongKhop.html">CƠ XƯƠNG KHỚP</a></li>
+                        <li><a href="../chuyenKhoa/taiMuiHong.html">TAI MŨI HỌNG</a></li>
+                        <li><a href="../chuyenKhoa/ungBuou.html">UNG BƯỚU</a></li>
+                        <li><a href="../chuyenKhoa/nhi.html">NHI</a></li>
+                        <li><a href="../chuyenKhoa/duoc.html">DƯỢC</a></li>
+                        <li><a href="../chuyenKhoa/capCuu.html">CẤP CỨU</a></li>
+                        <li><a href="../chuyenKhoa/noiTongHop.html">NỘI TỔNG HỢP</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">DỊCH VỤ ▼</a>
+                    <ul class="subMenu">
+                        <li><a href="../dichvu/khamthuong.html">KHÁM THƯỜNG</a></li>
+                        <li><a href="../dichvu/dichvu.html">KHÁM DỊCH VỤ</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Tintuc/tin_tuc.html">TIN TỨC</a></li>
+                <li><a href="../danhgia/danhgia.html">ĐÁNH GIÁ</a></li>
+            </ul>
+        </div>
+    </div>
+    <body class="chuyenkhoa">
+        <div class="ckImg">
             <img src="./image/banner-thai-san-an-toan-pc.jpg" alt="">
         </div>
         <div class="container">
@@ -60,5 +160,94 @@
                 </p>
             </div>
         </div>
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Tư vấn đặt khám trực tuyến</h4>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div>
+                        <div class="messages__item messages__item--visitor">
+                            T-Typh xin chào!
+                        </div>
+                        <div class="messages__item messages__item--operator">
+                            Chào!
+                        </div>
+                        <div class="messages__item messages__item--visitor">
+                            Bạn cần chúng mình hỗ trợ vấn đề nào ạ.
+                        </div>
+                        <div class="messages__item messages__item--operator">
+                            Hãy hướng dẫn tôi đặt lịch khám?
+                        </div>
+                        <div class="messages__item messages__item--operator">
+                            Bệnh viện có chấp nhận sử dụng bảo hiểm y tế không?
+                        </div>
+                        <div class="messages__item messages__item--typing">
+                            <span class="messages__dot"></span>
+                            <span class="messages__dot"></span>
+                            <span class="messages__dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbox__footer">
+                    <input class="chatbox__text--footer" type="text" placeholder="Nhập nội dung...">
+                    <b><p class="chatbox__send--footer">Gửi</p></b>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button>button</button>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="container_footer">
+          <div class="footer-left">
+            <p class="info_footer">
+              <strong>Giấy SCNĐKDN: </strong> 0301867769 <br />
+              <strong>Ngày cấp: </strong> 30/10/2022 <br />
+              <strong>Nơi cấp: </strong> Sở kế hoạch và đầu tư TPHCM <br />
+              <strong>GPHĐ khám chữa bệnh </strong> số 205/BHYT <br />
+              <strong>GPHĐ do BYT </strong> cấp ngày 02/11/2022
+            </p>
+            <div class="logo_footer">
+              <img src="../image/logo.png" alt="Logo" class="logoo" />
+            </div>
+            <hr class="vertical_footer" />
+          </div>
+          <div class="footer-middle">
+            <table id="menu_footer">
+              <tr>
+                <td><a href="#"><span class="bold"> TRANG CHỦ</span></a></td>
+                <td><a href="#"><span class="bold">TIN TỨC</span></a></td>
+              </tr>
+              <tr>
+                <td><a href="#"><span class="bold">GIỚI THIỆU</span></a></td>
+                <td><a href="#"><span class="bold">ĐÁNH GIÁ</span></a></td>
+              </tr>
+              <tr>
+                <td><a href="#"><span class="bold"> CHUYÊN KHOA</span></a></td>
+                <td><a href="#"><span class="bold">HỖ TRỢ</span></a></td>
+              </tr>
+              <tr>
+                <td><a href="#"><span class="bold">DỊCH VỤ</span></a></td>
+                <td><a href="#"><span class="bold"> LIÊN HỆ</span></a></td>
+              </tr>
+            </table>
+            <hr class="vertical_footer" />
+          </div>
+          <div class="footer-right">
+            <p class="contact_footer">
+              <i class="fa fa-map-marker"></i> &nbsp;&nbsp;&nbsp; Số 68, đường Nguyễn Văn Hưởng, phường Thảo Điền, TP Thủ Đức, TP HCM
+              <br />
+              <i class="fa fa-phone"></i> &nbsp;&nbsp;&nbsp;(+84) 862 228 2288 <br />
+              <i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp;Email: contact@ttyph.com.vn
+            </p>
+          </div>
+        </div>
+    </footer>
+    <script src="../box chat/boxchat_assets/js/Chat.js"></script>
+    <script src="../box chat/boxchat.js"></script>
 </body>
 </html>
