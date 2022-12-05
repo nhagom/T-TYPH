@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./payment.css">
         <script src="./payment.js"></script>
+        <link href="/trangchu/assets/img/Logo/T.png" rel="icon">
     </head>
     <body>
         <div class = "paymentBanner">
@@ -15,7 +16,7 @@
                 <div class = "paymentQR">
                     <h3>Quét mã QR để thanh toán</h3>
                     <p>Sử dụng camera hỗ trợ QR code để quét mã</p>
-                    <img src="./QR/QRBank.png">
+                    <img class="imgQR" src="./QR/QRBank.png">
                 </div>
                 <div class = "paymentInformation">
                     <h3>Thông tin đơn hàng</h3>
@@ -48,14 +49,26 @@
                             <p>Số tiền</p>
                             <p class="paymentRowBold">100.000đ</p>
                         </div>
-                         <div class = "paymentRow">
-                            <input type = "submit" onclick="openForm()" value = "Hủy thanh toán">
-                            <div class="time">
-                                <p id="timer"><script type="text/javascript">countDown();</script></p>
-                            </div>
-                        </div>
-                    </form>
                 </div>
+            </div>
+            <input onclick="openModel()" type="button" value=" Hủy giao dịch">
+            <div id="modalBox" class="modal">
+                <span onclick="closeModel()" class="close" title="Close Modal">&times;</span>
+                <form >
+                  <div class="modalContainer">
+                    <h2>Hủy giao dịch</h2> 
+                    <p>Bạn chắc chắn muốn hủy giao dịch thanh toán với <span>Bệnh viện Đa khoa Quốc tế T-TYPH</span> ?</p>
+                    <div class="clearFix">
+                        <input class="cancelbtn" onclick="closeModel()" type="button" value="ĐÓNG">
+                        <a href="./huygiaodich.html">
+                            <input class="deletebtn" type="button" value="HỦY GIAO DỊCH">
+                        </a>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            <div class="time">
+                <p id="timer"><script >countDown();</script></p>
             </div>
         </div>
     </body>
