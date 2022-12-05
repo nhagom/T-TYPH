@@ -3,13 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>VNPay Payment</title>
+        <title>Bank Payment</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./payment.css">
         <script src="./payment.js"></script>
+        <link href="/trangchu/assets/img/Logo/T.png" rel="icon">
     </head>
     <body>
-        <section class = "paymentBanner">
+        <div class = "paymentBanner">
             <h2>CỔNG THANH TOÁN</h2>
             <div class = "paymentContainer">
                 <div class = "paymentQR">
@@ -48,15 +49,27 @@
                             <p>Số tiền</p>
                             <p class="paymentRowBold">100.000đ</p>
                         </div>
-                         <div class = "paymentRow">
-                            <input type = "submit" value = "Hủy thanh toán">
-                            <div class="time">
-                                <p id="timer"><script type="text/javascript">countDown();</script></p>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
-        </section>
+            <input onclick="openModel()" type="button" value=" Hủy giao dịch">
+            <div id="modalBox" class="modal">
+                <span onclick="closeModel()" class="close" title="Close Modal">&times;</span>
+                <form >
+                  <div class="modalContainer">
+                    <h2>Hủy giao dịch</h2> 
+                    <p>Bạn chắc chắn muốn hủy giao dịch thanh toán với <span>Bệnh viện Đa khoa Quốc tế T-TYPH</span> ?</p>
+                    <div class="clearFix">
+                        <input class="cancelbtn" onclick="closeModel()" type="button" value="ĐÓNG">
+                        <a href="./huygiaodich.html">
+                            <input class="deletebtn" type="button" value="HỦY GIAO DỊCH">
+                        </a>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            <div class="time">
+                <p id="timer"><script >countDown();</script></p>
+            </div>
+        </div>
     </body>
 </html>

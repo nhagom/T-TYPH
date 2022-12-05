@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 :root{
 	--primary: #1691e2;
-    --next-btn-hover: #05219e;
-
+	--secondary: #E5F7FF;
+	--thirty: #b9e9fc;
+	--white: #fff;
+	--next-btn-hover: #05219e;
+	--back-btn-hover: #bcc2c2;
 }
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
-    /* font-family: 'Times New Roman', Times, serif; */
 
 }
 h2{
@@ -39,7 +41,6 @@ h2{
 }
 .paymentQR{
     padding: 30px;
-    width: 90%;
     border: red;
     text-align: center;
 }
@@ -53,25 +54,89 @@ h2{
 .imgLogo{
     width: 65px;
 }
-form input{
-    width: 112%;
-    color: #fff;
-    background: var(--primary);
-    padding: 8px 0;
-    border-radius: 8px;
-    border: none;
-    font-size: 18px;
-    /* cursor: pointer; */
+
+
+/* -----------------------Model Box------------------------------------------------ */
+input {
+  font-size: 16px;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  width: 350px;
+  cursor: pointer;
 }
-form input:hover{
-    opacity: 0.9;
-    background: var(--next-btn-hover);
+input:hover {
+  background: var(--next-btn-hover);
 }
+.clearFix{
+  display: flex;
+  justify-content: space-evenly;
+}
+.cancelbtn, .deletebtn {
+  width: 180px;
+}
+.cancelbtn:hover{
+    background-color: var(--back-btn-hover);
+}
+.deletebtn:hover{
+    background-color: red;
+}
+/* Add padding and center-align text to the container */
+.modalContainer {
+  padding: 16px;
+  text-align: center;
+  background-color: var(--white);
+  width: 60%;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+}
+.modalContainer p {
+  margin: 20px 0;
+}
+.modalContainer p span {
+  color: var(--primary);
+  font-weight: bold;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d59;
+  padding-top: 50px;
+}
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--white);
+}
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+/* ---------------------------------------------------------------------------- */
 .time {
     width: 112%;
     padding: 10px;
     text-align: center;
     color: var(--primary);
+}
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+    width: 100%;
+  }
 }
 @media(max-width: 992px){
     .paymentContainer{

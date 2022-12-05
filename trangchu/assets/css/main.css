@@ -1,4 +1,247 @@
+/*----- HEADER------ */
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.none{
+  display: none;
+}
+#tenBV {
+  font-size: 30px;
+  font-family: "Nunito", serif;
+  text-shadow: 3px 5px 5px gray  ;
+  height: fit-content;
+  margin-bottom: 10px;
+}
+#sologan {
+  font-weight: normal;
+  font-family: "Nunito", serif;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: -5px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 18vh;
+  background-color: #ddf5ff;
+}
+.logo {
+  /* width: 76px;
+  height: 90px; */
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 10vw;
+  min-width: 10vw;
+  /* flex: 1; */
+}
+img {
+  width: 100%;
+  height: 120px;
+  margin: 0;
+}
+img.logoo_header {
+  width: 150px;
+  height: 150px;
+}
 
+.slogan {
+  /* width: 600px; */
+  text-align: center;
+  min-width: 600px;
+}
+.search {
+  width: 25%;
+  /* padding: 0 20px; */
+}
+.form-search {
+  width: 100%;
+}
+.form-search input {
+  border: 0;
+  font-size: 14px;
+  color: #012970;
+  border: 1px solid rgba(1, 41, 112, 0.2);
+  /* padding: 7px 38px 7px 8px; */
+  margin-top: 40px;
+  border-radius: 3px;
+  transition: 0.3s;
+  width: 75%;
+  height: 25px;
+}
+.form-search input:focus,
+.form-search input:hover {
+  outline: none;
+  box-shadow: 0 0 10px 0 rgba(1, 41, 112, 0.15);
+  border: 1px solid rgba(1, 41, 112, 0.3);
+}
+.form-search button {
+  border: 0;
+  padding: 0;
+  margin-left: -30px;
+  background: none;
+}
+.form-search button i {
+  color: #012970;
+}
+
+/* .txt_search {
+  width: 75%;
+  margin-top: 30px;
+  height: 20px;
+} */
+.contact {
+  width: 250px;
+  min-width: 250px;
+}
+.phoneNumb {
+  width: 100%;
+  height: 20px;
+  margin-top: 20px;
+  padding: auto;
+  text-align: center;
+  color: #be2c32;
+  font-size: 20px;
+  min-width: 200px;
+}
+span.phone {
+  color: #00adef;
+  font-size: 20px;
+  font-weight: bold;
+  stroke: white;
+  text-shadow: 0 0px 3px #000000;
+}
+.btn {
+  height: 100px;
+  margin-top: 20px;
+  text-align: center;
+}
+.form-button {
+  width: 100%;
+  /* min-width: 250px; */
+}
+.form-button button {
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.btn_datLich {
+  background-color: #df2849;
+}
+.btn_logIn {
+  background-color: #28aadc;
+  border: 2px #0395b5 solid;
+}
+.qrCode {
+  min-width: 108px;
+  position: absolute;
+  right: 0px;
+}
+@media screen and (max-width: 1254px) {
+  img.maQR {
+    display: none;
+  }
+}
+/*---------------- thanh navigation---------------- */
+.navbar {
+  overflow: hidden;
+  background-color: rgba(40, 170, 220, 1);
+  font-family: Arial;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-evenly;
+  top: 0px;
+}
+/* đường dẫn bên trong navigation */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* thành phần dropdown */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+/* nút dropdown */
+.dropdown .nut_dropdown {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  font-weight: bold;
+}
+/* thêm màu background khi nút dropdown khi hover */
+.navbar a:hover,
+.nut_dropdown:hover {
+  background-color: white;
+  color: rgba(40, 170, 220, 1);
+}
+/* Ẩn nội dung dropdown*/
+.noidung_dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgba(40, 170, 220, 1);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* thiết lập style cho đường dẫn bên trong dropdown */
+.noidung_dropdown a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border: 0.5px solid white;
+}
+/* chọn background cho đường dẫn bên trong dropdown khi hover*/
+.noidung_dropdown a:hover {
+  background-color: white;
+  color: rgba(40, 170, 220, 1);
+  border: 0.5px solid rgba(40, 170, 220, 1);
+}
+/* Hiển thị nội dung dropdown khi được hover */
+.dropdown:hover .noidung_dropdown {
+  display: block;
+}
+.nut_goikham {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+.nut_goikham:hover {
+  background-color: white;
+  color: rgba(40, 170, 220, 1);
+  border: 0.5px solid rgba(40, 170, 220, 1);
+}
+.flex_container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.a {
+  float: none;
+}
 
 /* -----------FOOTER--------- */
 .container_footer {
