@@ -1,0 +1,384 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* position: fixed;
+    width: 100%;
+    top: 0; */
+}
+/* css head */
+.header button:hover {
+    cursor: pointer;
+}
+.headerContainer{
+    width: 100%;
+    display: flex;
+    height: 100px;
+    background-color: #d2f2ff;
+}
+.headerContainer a {
+    text-decoration: none;
+    color: white;
+}
+.headLogo {
+    margin-left: 10px;
+}
+.headLogo img{
+    height: 100%;
+}
+.headName{
+    width: 55%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.headName h1{
+    font-size: 25px;
+    margin: 5px 0;
+    text-shadow: 0px 2px 2px gray;
+}
+.headName h3{
+    font-size: 15px;
+    margin: 5px 0;
+    font-weight: 300;
+}
+.headQR img{
+    height: 98%;
+    position: relative;
+    right: 0;
+}
+.headSearch{
+    width: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.headSearch a{
+    color: black;
+}
+.headSearch form{
+    background-color: white;
+}
+.headSearch input{
+    border: none;
+    width: 90%;
+}
+.headSearch button{
+    background-color: white;
+    border: none;
+    padding: 0;
+}
+.headBut{
+    width: 25%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.headPhone{
+    font-weight: bold;
+    color: darkred;
+    text-shadow: 1px 2px 1px rgb(218, 218, 218);
+}
+.phone{
+    color: rgba(0, 173, 239, 1);
+}
+.headBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.btnBooking{
+    background-color: rgba(223, 40, 73, 1);
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 5px;
+    width: 100px;
+}
+.btnLogin{
+    background-color: rgba(40, 170, 220, 1);
+    border: 2px solid rgba(3, 149, 181, 1);
+    font-weight: bold;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 100px;
+}
+.headNavMobile {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: none;
+}
+.headNavMobile img {
+    width: 20px;
+}
+.headNavMobile button{
+    background-color: rgba(40, 170, 220, 0.85);
+    border: none;
+    padding: 3px 4px;
+    border-radius: 31px;
+    text-align: center; 
+}
+
+/* css thanh navi */
+.headerNav{
+    width: 100%;
+    background-color: rgba(40, 170, 220, 1);
+    height: 40px;
+}
+.headerNav form {
+    display: none;
+    width: 90%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+.headerNav form input {
+    border: none;
+    width: 100px;
+    margin: 2px;
+}
+.headerNav > form > button {
+    background-color: white;
+    border: none;
+    width: 10px;
+}
+#menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+}
+#menu > li {
+    position: relative;
+    padding: 7px 3px 0 3px;
+    border: 1px solid rgba(40, 170, 220, 1);
+}
+#menu > li > ul.subMenu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 39px;
+    left: 1px;
+}
+#menu > li:hover > ul.subMenu {
+    display: block;
+    z-index: 100;
+}
+.headerNav a {
+    text-decoration: none;
+    color: white;
+}
+.subMenu{
+    background-color: rgba(40, 170, 220, 1) ;
+    width: 190px;
+    padding: 0;
+}
+.subMenu li {
+    border: 1px solid white;
+    padding: 5px;
+}
+#menu > li:hover {
+    background-color: white;
+}
+#menu > li:hover > a {
+    color: rgba(40, 170, 220, 1);
+}
+.subMenu li:hover {
+    background-color: white;
+    border: 1px solid rgba(40, 170, 220, 1);
+}
+.subMenu > li:hover > a {
+    color: rgba(40, 170, 220, 1);
+}
+
+/* responsive */
+
+@media screen and (max-width: 1115px) {
+    .headQR{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1027px) {
+    .headSearch  {
+        width: 15%;
+        position: relative;
+    }
+    .headSearch input {
+        width: 50%;
+    }
+    .headSearch button {
+        position: absolute;
+        right: 0;
+        top: 2px
+    }
+    .headBut {
+        width: 23%;
+    }
+    .headName{
+        width: 50%;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 945px) {
+    .headPhone {
+        display: none;
+    }
+    .headBtn {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .headBut {
+        width: 15%;
+        position: absolute;
+        right: 0;
+        top: 12px;
+    }
+    .headSearch {
+        position: absolute;
+        right: 130px;
+        top: 40px
+    }
+    .headName {
+        width: 60%;
+    }
+    .headName h1 {
+        font-size: 23px;
+    }
+    .headName h3 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .headSearch {
+        display: none;
+    }
+    .headNavMobile {
+        display: block;
+        margin-left: 10px;
+    }
+    .headNavMobile button:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+    .headerNav {
+        display: none;
+    }
+    /* css cho thanh nav của moblie */
+    .headerNav.responsive {
+        display: block;
+        position: absolute;
+        top: 100px;
+        width: 150px;
+        height: 250px;
+    }
+    .headerNav.responsive form {
+        display: block;
+    }
+    .headerNav.responsive #menu {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 30px;
+        height: auto;
+        padding-right: 0;
+    }
+    .headerNav.responsive #menu > li {
+        padding: 5px 0 5px 5px;
+    }
+    .headerNav.responsive #menu > li > ul.subMenu {
+        position: absolute;
+        left: 150px;
+        top: 0;
+        width: 150px;
+    }
+    .headLogo img {
+        height: 60%;
+        margin-top: 20px
+    }
+}
+
+@media screen and (max-width: 712px) {
+    .headName {
+        width: 350px;
+    }
+    .headName h1 {
+        font-size: 18px;
+    }
+    .headName h3 {
+        font-size: 13px;
+    }
+    .headBut{
+        width: 30%;
+    }
+    .headBtn {
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+    }
+    .btnBooking, .btnLogin {
+        font-size: 10px;
+        width: 75px;
+        padding: 4px;
+    }
+    .headNavMobile{
+        margin-left: 5px;
+    }
+    .headLogo {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .headName{
+        width: 300px;
+        margin-left: 5px;
+    }
+    .headName h1 {
+        font-size: 16px;
+    }
+    .headName h3 {
+        font-size: 12px;
+    }
+    .btnBooking, .btnLogin {
+        font-size: 10px;
+        width: 75px;
+        padding: 4px;
+    }
+    .headerNav {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .headName {
+        width: 230px;
+    }
+    .headName h1 {
+        font-size: 11px;
+    }
+    .headName h3 {
+        font-size: 8px;
+    }
+    .btnBooking, .btnLogin {
+        font-size: 7px;
+        width: 60px;
+        padding: 4px;
+    }
+}
+
+
+
+
+
