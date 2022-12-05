@@ -38,6 +38,7 @@ html, body{
     font-size: 25px;
     margin: 5px 0;
     text-shadow: 0px 2px 2px gray;
+    font-weight: bold;
 }
 .headName h3{
     font-size: 15px;
@@ -56,14 +57,22 @@ html, body{
 }
 .headSearch a{
     color: black;
+    font-size: 14px;
 }
 .headSearch form{
     background-color: white;
+    /*width: 330px;
+    height: 25px;*/
 }
-/* sửa */
 .headSearch input{
     border: none;
     width: 87%;
+    font-size: 14px;
+}
+.headSearch button{
+    background-color: white;
+    border: none;
+    padding: 0;
 }
 .headBut{
     width: 25%;
@@ -92,6 +101,8 @@ html, body{
     padding: 4px;
     margin: 5px;
     width: 100px;
+    font-size: 12px;
+    height: 30px;
 }
 .btnLogin{
     background-color: rgba(40, 170, 220, 1);
@@ -102,6 +113,8 @@ html, body{
     border-radius: 10px;
     margin: 5px;
     width: 100px;
+    font-size: 12px;
+    height: 30px;
 }
 .headNavMobile {
     margin-top: auto;
@@ -138,8 +151,7 @@ html, body{
     width: 100px;
     margin: 2px;
 }
-/* sửa */
-.headerNav > form > a {
+.headerNav > form > button {
     background-color: white;
     color: black;
     width: 10px;
