@@ -58,7 +58,7 @@
 
 
 .chatbox__heading--header {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     color: white;
     text-align: center;
     margin-top: auto;
@@ -104,7 +104,7 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-top: 15px;
-    height: 30px;
+    height: 50px;
 }
 
 .chatbox__footer input {
