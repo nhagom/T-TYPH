@@ -57,15 +57,17 @@ html, body{
 }
 .headSearch a{
     color: black;
+    font-size: 14px;
 }
 .headSearch form{
     background-color: white;
-    width: 330px;
-    height: 15px;
+    /*width: 330px;
+    height: 25px;*/
 }
 .headSearch input{
     border: none;
-    width: 90%;
+    width: 87%;
+    font-size: 14px;
 }
 .headSearch button{
     background-color: white;
@@ -99,6 +101,8 @@ html, body{
     padding: 4px;
     margin: 5px;
     width: 100px;
+    font-size: 12px;
+    height: 30px;
 }
 .btnLogin{
     background-color: rgba(40, 170, 220, 1);
@@ -109,6 +113,8 @@ html, body{
     border-radius: 10px;
     margin: 5px;
     width: 100px;
+    font-size: 12px;
+    height: 30px;
 }
 .headNavMobile {
     margin-top: auto;
@@ -147,7 +153,7 @@ html, body{
 }
 .headerNav > form > button {
     background-color: white;
-    border: none;
+    color: black;
     width: 10px;
 }
 #menu {
