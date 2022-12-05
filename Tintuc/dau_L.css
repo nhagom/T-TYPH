@@ -10,18 +10,18 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-p, ul, li{
+.container p, ul, li{
     color: rgb(86, 85, 85);
 }
-h4{
+.container h4{
     color: rgb(93, 91, 91);
     margin-top: 0px;
     margin-bottom: -5px;
 }
-h3, h2{
+.container h3, h2{
     color: rgba(14, 14, 123, 0.916);
 }
-span{
+.container span{
     font-weight: bold;
 }
 #anKieng{
@@ -34,13 +34,13 @@ span{
     border-radius: 5px;
     position:fixed;
     color: rgba(0, 0, 0, 0.267);
-    left: 83%;
-    top:50%;
+    right: 83%;
+    top:40%;
 }
 .noiDungMenu{
     width: 40vw;
     position: fixed;
-    left: 50vw;
+    right: 50vw;
     display: none;
     background-image: linear-gradient(45deg, rgba(8, 184, 238, 0.866),rgba(3, 57, 144, 0.811));
     border-radius: 10px;
@@ -67,11 +67,11 @@ span{
 .noiDungMenu a:hover{
     color: rgb(208, 209, 210);
 }
-a{
+.container a{
     text-decoration: none;
     color: black;
 }
-img{
+.container img{
     width: 100%;
 }
 .lich{

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../header/header.css" />
+    <title>Giới thiệu T-TYPH</title>
+    <link rel="stylesheet" href="../header1/header.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
       rel="stylesheet"
@@ -14,47 +14,88 @@
   </head>
   <body>
     <div class="header">
-      <div class="header__container">
-        <div class="header__logo">
-          <img src="../image/logo.png" alt="Logo" class="header__logoo" />
-        </div>
-        <div class="header__slogan">
-          <h2>BỆNH VIỆN ĐA KHOA QUỐC TẾ T-TYPH</h2>
-          <h4>"ĐIỀU TRỊ BẰNG TRÁI TIM - CHĂM SÓC BẰNG TẤM LÒNG"</h4>
-        </div>
-        <div class="header__search">
-          <form action="#" method="post" class="header__form-search">
-            <input
-              type="text"
-              readonly
-              onfocus="this.removeAttribute('readonly')"
-              placeholder="Tìm kiếm ..."
-            />
-            <button type="submit"><i class="bi bi-search"></i></button>
-          </form>
-        </div>
-        <div class="header__contact">
-          <div class="header__phoneNumb">
-            <!-- <img src="../image/old-typical-phone.svg" class="icon_phone" /> -->
-            ☎<span class="header__phone"> (+84) 862 228 2288</span>
-          </div>
-          <div class="header__btn">
-            <form action="#" method="get" class="header__form-button">
-              <button class="header__btn_datLich" type="submit">
-                <i class="bi bi-calendar3"></i> ĐẶT LỊCH
+      <div class="headerContainer">
+          <div class="headNavMobile">
+              <button class="iconNav" onclick="showNav()">
+                  <img src="../image/menu-alt-64.webp" alt="">
               </button>
-              <button class="header__btn_logIn" type="submit">ĐĂNG NHẬP</button>
-            </form>
           </div>
-        </div>
-        <div class="header__qrCode">
-          <img src="../image/QRcode.jpg" class="header__maQR" />
-        </div>
+          <div class="headLogo">
+              <img src="../image_Tai/logo.png" alt="Logo">
+          </div>
+          <div class="headName">
+              <h1>BỆNH VIỆN ĐA KHOA QUỐC TẾ T-TYPH</h1>
+              <h3>"ĐIỀU TRỊ BẰNG TRÁI TIM - CHĂM SÓC BẰNG TẤM LÒNG"</h3>
+          </div>
+          <div class="headSearch">
+              <form action="#">
+                  <input type="text" placeholder="Tìm kiếm...">
+                 <a href="../Tìm kiếm/timkiem.html">
+                      <i class="bi bi-search"></i>
+                  </a> 
+              </form>
+          </div>
+          <div class="headBut">
+              <div class="headPhone">
+                  ☎<span class="phone"> (+84) 862 228 2288</span>
+              </div>
+              <div class="headBtn">
+                  <button class="btnBooking">
+                      <a href="../Booking/bookingmain/booking.html">
+                          <i class="bi bi-calendar3"></i> ĐẶT LỊCH
+                      </a>
+                  </button>
+                  <button class="btnLogin"><a href="../login signup/signIn.html">ĐĂNG NHẬP</a></button>
+              </div>
+          </div>
+          <div class="headQR">
+              <img src="../image_Tai/QRcode.jpg" alt="QR Code">
+          </div>
       </div>
-    </div>
+      <div class="headerNav" id="myNav">
+          <form action="#">
+              <input type="text" placeholder="Tìm kiếm...">
+              <a href="../Tìm kiếm/timkiem.html">
+                  <i class="bi bi-search"></i>
+              </a>
+          </form>
+          <ul id="menu">
+              <li><a href="../trangchu/trangchu.html">TRANG CHỦ</a></li>
+              <li><a href="#">GIỚI THIỆU ▼</a>
+                  <ul class="subMenu">
+                      <li><a href="../giới thiệu/gioiThieu.html">TẦM NHÌN, SỨ MỆNH</a></li>
+                      <li><a href="../giới thiệu/soDoToChuc.html">SƠ ĐỒ TỔ CHỨC</a></li>
+                      <li><a href="../giới thiệu/baoMat.html">CHÍNH SÁCH BẢO MẬT</a></li>
+                  </ul>
+              </li>
+              <li><a href="../chuyenKhoa/chuyenKhoa.html">CHUYÊN KHOA ▼</a>
+                  <ul class="subMenu">
+                      <li><a href="../chuyenKhoa/san.html">SẢN</a></li>
+                      <li><a href="../chuyenKhoa/noiHoHap.html">NỘI HÔ HẤP</a></li>
+                      <li><a href="../chuyenKhoa/tieuHoa.html">TIÊU HÓA</a></li>
+                      <li><a href="../chuyenKhoa/coXuongKhop.html">CƠ XƯƠNG KHỚP</a></li>
+                      <li><a href="../chuyenKhoa/taiMuiHong.html">TAI MŨI HỌNG</a></li>
+                      <li><a href="../chuyenKhoa/ungBuou.html">UNG BƯỚU</a></li>
+                      <li><a href="../chuyenKhoa/nhi.html">NHI</a></li>
+                      <li><a href="../chuyenKhoa/duoc.html">DƯỢC</a></li>
+                      <li><a href="../chuyenKhoa/capCuu.html">CẤP CỨU</a></li>
+                      <li><a href="../chuyenKhoa/noiTongHop.html">NỘI TỔNG HỢP</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">DỊCH VỤ ▼</a>
+                  <ul class="subMenu">
+                      <li><a href="../dichvu/khamthuong/khamthuong.html">KHÁM THƯỜNG</a></li>
+                      <li><a href="../dichvu/khamdv/dichvu.html">KHÁM DỊCH VỤ</a></li>
+                  </ul>
+              </li>
+              <li><a href="../Tintuc/tin_tuc.html">TIN TỨC</a></li>
+              <li><a href="../danhgia/danhgia.html">ĐÁNH GIÁ</a></li>
+          </ul>
+      </div>
+  </div>
     <div class="content">
         <div class="banner">
-            <img src="../image/banner-trang-chu-pc-1.jpg" >
+            <img src="../image_Tai/banner-trang-chu-pc-1.jpg" >
         </div>
         <div>
             <h3><span>SỨ MỆNH - TẦM NHÌN</span></h3>
@@ -69,7 +110,7 @@
         </div>
         <div class="suMenh">
             <div class="hinhAnh">
-                <img src="../image/doi-ngu-chuyen-gia-ozus8u57zhj1cdqkazpe6mw4op73biszrwqpa312aa.jpg">
+                <img src="../image_Tai/doi-ngu-chuyen-gia-ozus8u57zhj1cdqkazpe6mw4op73biszrwqpa312aa.jpg">
             </div>
             <div class="noiDung">
                 <h3>ĐỘI NGŨ CHUYÊN GIA</h3>
@@ -80,7 +121,7 @@
         </div>
         <div class="suMenh">
             <div class="hinhAnh">
-                <img src="../image/benh-vien-khach-san-5-sao-p0wakebvsn39j6qexltutoejgx02e3bxwsncti6mdu.jpg">
+                <img src="../image_Tai/benh-vien-khach-san-5-sao-p0wakebvsn39j6qexltutoejgx02e3bxwsncti6mdu.jpg">
             </div>
             <div class="noiDung">
                 <h3>BỆNH VIỆN KHÁCH SẠN 5 SAO</h3>
@@ -92,7 +133,7 @@
         </div>
         <div class="suMenh">
             <div class="hinhAnh">
-                <img src="../image/cphi-2.jpg">
+                <img src="../image_Tai/cphi-2.jpg">
             </div>
             <div class="noiDung">
                 <h3>CƠ SỞ VẬT CHẤT - TRANG THIẾT BỊ HIỆN ĐẠI</h3>
@@ -115,7 +156,7 @@
         </div>
         <div class="suMenh">
             <div class="hinhAnh">
-                <img src="../image/dich-vu-kham-cua-benh-cao-cap-p0wat2eatmyglq54bcpzthnkou9xdlqtrp8k5dbx02.jpg">
+                <img src="../image_Tai/dich-vu-kham-cua-benh-cao-cap-p0wat2eatmyglq54bcpzthnkou9xdlqtrp8k5dbx02.jpg">
             </div>
             <div class="noiDung">
                 <h3>DỊCH VỤ CAO CẤP - GIÁ THÀNH HỢP LÝ</h3>
@@ -130,7 +171,7 @@
         </div>
         <div class="suMenh">
             <div class="hinhAnh">
-                <img src="../image/trach-nhiem-voi-nguoi-lao-dong-p0wb4g7xlejh7pltu9vc0m8jou5ylmxso1o9e0g9n6.jpg">
+                <img src="../image_Tai/trach-nhiem-voi-nguoi-lao-dong-p0wb4g7xlejh7pltu9vc0m8jou5ylmxso1o9e0g9n6.jpg">
             </div>
             <div class="noiDung">
                 <h3>TRÁCH NHIỆM VỚI NGƯỜI LAO ĐỘNG</h3>
@@ -142,7 +183,7 @@
         </div>
         <div class="suMenh">
             <div class="hinhAnh">
-                <img src="../image/trach-nhiem-voi-cong-dong-p0wcclp0m8zckbh10uxgmz507ejn5t7wekubwwzjde.jpg">
+                <img src="../image_Tai/trach-nhiem-voi-cong-dong-p0wcclp0m8zckbh10uxgmz507ejn5t7wekubwwzjde.jpg">
             </div>
             <div class="noiDung">
                 <h3>TRÁCH NHIỆM VỚI CỘNG ĐỒNG</h3>
@@ -155,4 +196,5 @@
         </div>
     </div>
   </body>
+  <script src="../header1/header.js"></script>
 </html>

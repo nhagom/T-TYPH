@@ -2,7 +2,7 @@
        *{
         margin: 0;
         padding: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
       }
       body {
         width: 100vw;
@@ -15,7 +15,6 @@
         border-radius: 5px;
         box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
         height: 100%;
-        /* display: grid; */
         margin: 50px auto;
       }
       .slide-controls{
@@ -92,17 +91,20 @@
             margin-top: auto;
             margin-bottom: auto;
             height: 100%;
+            /* min-width: 564px; */
         }
-
+        .form-inner form.password {
+          /* margin-right: 1.5%; */
+          /* margin-left: 1.5%; */
+          /* width: 35%; */
+        }
         form.verify{
           /* margin-left: -33%;  */
         }
         @media screen and (max-width:768px){
           form.verify {
-            position: relative;
-            top:50px;
-          }
-    
+            margin-top: 0;
+          }    
         }
         form.verify .field{
           text-align: center;
@@ -112,8 +114,8 @@
           display: flex;
           text-align: center;
           width: 100%;
-          /* min-width: 590px; */
-          justify-content: center;    
+          justify-content: center;
+          overflow: hidden;    
         }
         form.verify .OTP input{
           width: 50px;
@@ -121,8 +123,13 @@
           text-align: center;
           margin: 10px;
           font-size: 30px;
-          display: inline;
-          
+          display: inline;         
+        }
+        @media screen and (max-width:768px){
+          form.verify .OTP input {
+            width: 40px;
+            height: 40px;
+          }
         }
         form.verify .OTP input::-webkit-outer-spin-button,
         form.verify .OTP input::-webkit-inner-spin-button {
@@ -165,6 +172,7 @@
           flex-direction: row;
           width: 100%;
           justify-content: center;
+          margin-top: 20px;
          }
         form.profile .inform {
             text-align: center;
@@ -173,6 +181,7 @@
             font-weight: bold;
             margin-left: auto;
             margin-right: auto;
+            font-size: 18px;
         }
         form.profile .hoSo{
           width: 40%;
@@ -180,39 +189,71 @@
          form.profile .boSung{
           width: 40%;
          }
+         form.profile .title {
+          font-weight: bold;
+         }
+         form.profile .row {
+          margin-bottom: 20px;
+         }
+         form.profile .label {
+          font-size: 18px;
+         }
+         form.profile .fill input {
+          width: 80%;
+          height: 30px;
+         }
+         form.profile .fill select {
+          width: 80%;
+          height: 34px;
+         }
         @media screen and (max-width:768px) {
             form.profile {
               justify-content: center;
+              font-size: 15px;
+            }
+            form.profile .inform {
+              font-size: 17px;
+            }
+            form.profile .title {
+              font-size: 16px;
+              margin-bottom:15px;
+              text-align: center;
             }
             form.profile .information {
               display: block;
-              width: 80%;
+              width: 100%;
               margin-left: auto;
               margin-right: auto;
             }
             form.profile .hoSo {
-              width: 80%;
-            }
-            form.profile .hoSo .form__row {
-              width: 100%;
-            }
-            form.profile .hoSo .form__row input {
-              width: 100%;
-            }
-            form.profile .hoSo .form__row select {
               width: 100%;
             }
             form.profile .boSung {
-              width: 80%;
-            }
-            form.profile .boSung .form__row {
               width: 100%;
             }
-            form.profile .boSung .form__row input {
+            form.profile .row {
+              display: flex;
               width: 100%;
+              margin-bottom: 10px;
+              justify-content: space-between;
             }
-            form.profile .boSung .form__row select {
-              width: 100%;
+            form.profile .row .label {
+              
+              font-size: 15px;
+              padding-top: 5px;
+              flex-basis: 35%;
+              text-align: end;
+            }
+            form.profile .row .fill{
+              text-align: end;
+              flex-basis: 60%;
+
+            }
+            form.profile .row .fill input {
+              width: 90%;
+            }
+            form.profile .row .fill select {
+              width: 90%;
             }
          }
         form.profile .form__row{
