@@ -36,15 +36,11 @@ body{
 input.invalid {
     background-color: #fab5b5;
 }
-  
-  /* Ẩn tất cả các bước theo mặc định: */
+  /* Ẩn tất cả step */
 .tab {
     display: none;
 	margin-bottom: 30px;
 }
-  
-
-  
   /* Tạo các vòng tròn biểu thị các bước của biểu mẫu: */
 .step {
     height: 45px;
@@ -59,17 +55,14 @@ input.invalid {
     display: inline-block;
     opacity: 0.5;
 }
-  
 .step.active {
     opacity: 1;
     background-color: var(--primary);
-}
-  
+} 
 /* Đánh dấu các bước đã hoàn thành và hợp lệ */
 .step.finish {
     background-color: var(--primary);
 }
-
 /* --------Note------------------------------------------------------------------------------------ */
 .bookingNote{
 	width: 100%;
@@ -122,7 +115,6 @@ h2{
 #selectKhamDichVu {
 	width: 100%;
 }
-
 .category{
 	display: flex;
 	width: 80%;
