@@ -10,7 +10,6 @@ body{
   /* position: relative;
   bottom: 0px; */
   width: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .footer-left {
   display: flex;
@@ -22,7 +21,7 @@ p.info_footer  {
   font-size: 13px;
   margin-left: 20px;
   margin-top: 20px;
-  font-family: "Nunito";
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .logo_footer {
   display: flex;
@@ -34,7 +33,7 @@ img.logoo {
   width: 150px;
   height: 150px;
 }
-hr.vertical_footer {
+hr.vertical_footer hr {
   width: 0px;
   height: 90%;
   margin-left: 10px;
@@ -71,6 +70,7 @@ p.contact_footer {
   font-size: 17px;
   line-height: 28px;
   overflow: hidden;
+  color: #000000;
 }
 .footer_right{
   height: 100%;
