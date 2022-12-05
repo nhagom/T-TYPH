@@ -38,6 +38,7 @@ html, body{
     font-size: 25px;
     margin: 5px 0;
     text-shadow: 0px 2px 2px gray;
+    font-weight: bold;
 }
 .headName h3{
     font-size: 15px;
@@ -59,6 +60,8 @@ html, body{
 }
 .headSearch form{
     background-color: white;
+    width: 330px;
+    height: 15px;
 }
 .headSearch input{
     border: none;
