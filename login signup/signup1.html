@@ -15,7 +15,7 @@
   <body>
     <div class="container">
         <div class="slide-controls">
-            <input type="radio" name="slide" id="verify">
+            <input type="radio" name="slide" id="verify" disabled>
             <input type="radio" name="slide" id="password">
             <input type="radio" name="slide" id="profile">
             <label for="verify" class="slide verify">1. Xác thực</label>
@@ -29,12 +29,13 @@
                     Nhập mã OTP vừa được gửi đến số 0914151627
                 </div>
                 <div class="OTP">
-                    <input type="number" class="number">
-                    <input type="number" class="number">
-                    <input type="number" class="number">
-                    <input type="number" class="number">
-                    <input type="number" class="number">
-                    <input type="number" class="number">
+                    <input type="number" class="number" required min="0" max="9" maxlength="1">
+                    <input type="number" class="number" required min="0" max="9">
+                    <input type="number" class="number" required min="0" max="9">
+                    <input type="number" class="number" required min="0" max="9">
+                    <input type="number" class="number" required min="0" max="9">
+                    <input type="number" class="number" required min="0" max="9">
+                    
                 </div>
                 <div class="continue">
                     <button type="submit" class="tiepTuc">Tiếp tục</button>
@@ -89,7 +90,7 @@
                         <label>Số CMND/CCCD <span class="redStar">*</span></label>
                     </div>
                     <div class="form__row">
-                        <input type="text" required>
+                        <input type="number" required>
                     </div>
                 </div>
                 <div class="boSung">
@@ -135,11 +136,16 @@
         // const profileBtn = document.querySelector(label.profile);
         const verifyForm = document.querySelector("form.verify");
         const passwordForm = document.querySelector("form.password");
+        const verifyText = document.querySelector("label.verify");
+        const passwordText = document.querySelector("label.password");
+        const profileText = document.querySelector("label.profile")
         verifyBtn.onclick = (()=>{
             verifyForm.style.marginLeft = "-33%";
+            passwordText.click();
         });
         passwordBtn.onclick = (()=>{
             passwordForm.style.marginLeft = "-33%";
+            profileText.click();
         })
     </script>
     <!-- <script>
