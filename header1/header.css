@@ -60,14 +60,10 @@ html, body{
 .headSearch form{
     background-color: white;
 }
+/* sửa */
 .headSearch input{
     border: none;
-    width: 90%;
-}
-.headSearch button{
-    background-color: white;
-    border: none;
-    padding: 0;
+    width: 87%;
 }
 .headBut{
     width: 25%;
@@ -142,9 +138,10 @@ html, body{
     width: 100px;
     margin: 2px;
 }
-.headerNav > form > button {
+/* sửa */
+.headerNav > form > a {
     background-color: white;
-    border: none;
+    color: black;
     width: 10px;
 }
 #menu {
