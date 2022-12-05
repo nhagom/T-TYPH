@@ -62,12 +62,7 @@ html, body{
 }
 .headSearch input{
     border: none;
-    width: 90%;
-}
-.headSearch button{
-    background-color: white;
-    border: none;
-    padding: 0;
+    width: 87%;
 }
 .headBut{
     width: 25%;
@@ -174,9 +169,9 @@ html, body{
     width: 100px;
     margin: 2px;
 }
-.headerNav > form > button {
+.headerNav > form > a {
     background-color: white;
-    border: none;
+    color: black;
     width: 10px;
 }
 #menu {
@@ -248,7 +243,7 @@ html, body{
     .headSearch input {
         width: 50%;
     }
-    .headSearch button {
+    .headSearch a {
         position: absolute;
         right: 0;
         top: 2px
