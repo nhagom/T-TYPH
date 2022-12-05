@@ -4,10 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chính sách bảo mật</title>
     <link rel="stylesheet" href="./baoMat.css">
+    <link rel="stylesheet" href="../header1/header.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
 </head>
 <body>
+    <div class="header">
+        <div class="headerContainer">
+            <div class="headNavMobile">
+                <button class="iconNav" onclick="showNav()">
+                    <img src="../image/menu-alt-64.webp" alt="">
+                </button>
+            </div>
+            <div class="headLogo">
+                <img src="../image_Tai/logo.png" alt="Logo">
+            </div>
+            <div class="headName">
+                <h1>BỆNH VIỆN ĐA KHOA QUỐC TẾ T-TYPH</h1>
+                <h3>"ĐIỀU TRỊ BẰNG TRÁI TIM - CHĂM SÓC BẰNG TẤM LÒNG"</h3>
+            </div>
+            <div class="headSearch">
+                <form action="#">
+                    <input type="text" placeholder="Tìm kiếm...">
+                   <a href="../Tìm kiếm/timkiem.html">
+                        <i class="bi bi-search"></i>
+                    </a> 
+                </form>
+            </div>
+            <div class="headBut">
+                <div class="headPhone">
+                    ☎<span class="phone"> (+84) 862 228 2288</span>
+                </div>
+                <div class="headBtn">
+                    <button class="btnBooking">
+                        <a href="../Booking/bookingmain/booking.html">
+                            <i class="bi bi-calendar3"></i> ĐẶT LỊCH
+                        </a>
+                    </button>
+                    <button class="btnLogin"><a href="../login signup/signIn.html">ĐĂNG NHẬP</a></button>
+                </div>
+            </div>
+            <div class="headQR">
+                <img src="../image_Tai/QRcode.jpg" alt="QR Code">
+            </div>
+        </div>
+        <div class="headerNav" id="myNav">
+            <form action="#">
+                <input type="text" placeholder="Tìm kiếm...">
+                <a href="../Tìm kiếm/timkiem.html">
+                    <i class="bi bi-search"></i>
+                </a>
+            </form>
+            <ul id="menu">
+                <li><a href="../trangchu/trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="#">GIỚI THIỆU ▼</a>
+                    <ul class="subMenu">
+                        <li><a href="../giới thiệu/gioiThieu.html">TẦM NHÌN, SỨ MỆNH</a></li>
+                        <li><a href="../giới thiệu/soDoToChuc.html">SƠ ĐỒ TỔ CHỨC</a></li>
+                        <li><a href="../giới thiệu/baoMat.html">CHÍNH SÁCH BẢO MẬT</a></li>
+                    </ul>
+                </li>
+                <li><a href="../chuyenKhoa/chuyenKhoa.html">CHUYÊN KHOA ▼</a>
+                    <ul class="subMenu">
+                        <li><a href="../chuyenKhoa/san.html">SẢN</a></li>
+                        <li><a href="../chuyenKhoa/noiHoHap.html">NỘI HÔ HẤP</a></li>
+                        <li><a href="../chuyenKhoa/tieuHoa.html">TIÊU HÓA</a></li>
+                        <li><a href="../chuyenKhoa/coXuongKhop.html">CƠ XƯƠNG KHỚP</a></li>
+                        <li><a href="../chuyenKhoa/taiMuiHong.html">TAI MŨI HỌNG</a></li>
+                        <li><a href="../chuyenKhoa/ungBuou.html">UNG BƯỚU</a></li>
+                        <li><a href="../chuyenKhoa/nhi.html">NHI</a></li>
+                        <li><a href="../chuyenKhoa/duoc.html">DƯỢC</a></li>
+                        <li><a href="../chuyenKhoa/capCuu.html">CẤP CỨU</a></li>
+                        <li><a href="../chuyenKhoa/noiTongHop.html">NỘI TỔNG HỢP</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">DỊCH VỤ ▼</a>
+                    <ul class="subMenu">
+                        <li><a href="../dichvu/khamthuong/khamthuong.html">KHÁM THƯỜNG</a></li>
+                        <li><a href="../dichvu/khamdv/dichvu.html">KHÁM DỊCH VỤ</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Tintuc/tin_tuc.html">TIN TỨC</a></li>
+                <li><a href="../danhgia/danhgia.html">ĐÁNH GIÁ</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="mainContent">
         <div class="textCenter">
             <h1>CHÍNH SÁCH BẢO MẬT THÔNG TIN</h1>
@@ -91,5 +176,6 @@
             </p>
         </div>
     </div>
+    <script src="../header1/header.js"></script>
 </body>
 </html>
