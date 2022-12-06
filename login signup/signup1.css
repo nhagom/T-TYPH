@@ -287,6 +287,9 @@
         color: #fff;
         border: 1px salmon solid;
         }
+        button.taoHoSo a {
+          color: #fff;
+        }
         .field a{
         text-decoration: none;
         color: #28aadc;

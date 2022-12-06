@@ -117,6 +117,13 @@
     text-align: left;
 }
 
+.chatbox__footer button{
+    border: 0;
+    background-color: #28AADC;
+    color: white;
+    font-weight: bold;
+}
+
 .chatbox__send--footer {
     color: white;    
     margin-top: auto;

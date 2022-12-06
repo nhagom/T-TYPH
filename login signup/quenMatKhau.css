@@ -88,8 +88,10 @@
         border-bottom-width: 2px;
         font-size: 20px;
         background-color: #28aadc;
-        color: #fff;
         cursor: pointer;
+      }
+      form .field button a{
+        color: #fff;
       }
       .signin-link{
         text-align: center;

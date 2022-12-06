@@ -16,7 +16,6 @@ function showTab(n) {
   } else {
     document.getElementById("nextBtn").innerHTML = "Tiếp tục";
   }
-  //... và chạy một chức năng sẽ hiển thị chỉ báo bước chính xác:
   fixStepIndicator(n)
 }
 
@@ -30,44 +29,46 @@ function nextPrev(n) {
   // Tăng hoặc giảm tab hiện tại thêm 1:
   currentTab = currentTab + n;
   // nếu bạn đã đến cuối biểu mẫu ...
-  if (currentTab >= x.length) {
-    // ...  biểu mẫu được gửi:
-    document.getElementById("regForm").submit();
-    return false;
-  }
-  // Nếu không, hãy hiển thị đúng tab:
+  // if (currentTab >= x.length) {
+  //   // biểu mẫu được gửi:
+  //   document.getElementById("regForm").submit();
+  //   return false;
+  // }
+  // Nếu không, hiển thị đúng tab
   showTab(currentTab);
 }
 
+// -------------------------Xác thực-------------------------------
 function validateForm() {
-  // Hàm này liên quan đến việc xác thực các trường biểu mẫu
+  // xác thực biểu mẫu
   var x, y, i, valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
-  // Một vòng lặp kiểm tra mọi trường đầu vào trong tab hiện tại:
+  // Một vòng lặp kiểm tra mọi trường đầu vào trong tab hiện tại
   for (i = 0; i < y.length; i++) {
     // Nếu một trường trống ...
     if (y[i].value == "") {
-      // thêm một lớp "không hợp lệ" vào trường:
+      // thêm "invalid" 
       y[i].className += " invalid";
       // và đặt trạng thái hợp lệ hiện tại thành false
       valid = false;
     }
   }
-  // Nếu trạng thái hợp lệ là đúng, hãy đánh dấu bước là đã hoàn thành và hợp lệ:
+  // Nếu trạng thái hợp lệ là đúng, đánh dấu bước là đã hoàn thành và hợp lệ
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
   return valid; //trả lại trạng thái hợp lệ
 }
 
+// -------------------------------------
 function fixStepIndicator(n) {
-  // Hàm này loại bỏ lớp "hoạt động" của tất cả các bước...
+  // Hàm này loại bỏ lớp "hoạt động" của tất cả các bước
   var i, x = document.getElementsByClassName("step");
   for (i = 0; i < x.length; i++) {
     x[i].className = x[i].className.replace(" active", "");
   }
-  //... và thêm lớp "hoạt động" vào bước hiện tại:
+  //và thêm lớp "hoạt động" vào bước hiện tại
   x[n].className += " active";
 }
 
