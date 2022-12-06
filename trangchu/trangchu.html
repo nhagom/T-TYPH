@@ -27,8 +27,8 @@
 
   <!--BOX CHAT-->
   <link rel="stylesheet" href="../box chat/boxchat_assets/css/chat.css">
-  <link rel="stylesheet" href="./assets/css/boxchat.css">
-  <link rel="stylesheet" href="../box chat/boxchat_assets/css/typing.css">
+  <link rel="stylesheet" href="../box chat/boxchat.css">
+  <link rel="stylesheet" href="../box chat/boxchat_assets/css/typing.css"> 
 
   <!-- CSS footer-->
     <link rel="stylesheet" href="./assets/css/footer.css" />
@@ -119,7 +119,7 @@
                 <li><a href="#">DỊCH VỤ ▼</a>
                     <ul class="subMenu">
                         <li><a href="../dichvu/khamthuong/khamthuong.html">KHÁM THƯỜNG</a></li>
-                        <li><a href="../dichvu/khamdv/dichvu.html">KHÁM DỊCH VỤ</a></li>
+                        <li><a href="../dichvu/dichvu.html">KHÁM DỊCH VỤ</a></li>
                     </ul>
                 </li>
                 <li><a href="../Tintuc/tin_tuc.html">TIN TỨC</a></li>
@@ -505,11 +505,11 @@
   <script src="assets/js/main.js"></script>
 
   <!--BOX CHAT-->
-          <div class="chatbox">
+             <div class="chatbox">
             <div class="chatbox__support">
                 <div class="chatbox__header">
                     <div class="chatbox__content--header">
-                        <b><h4 class="chatbox__heading--header">Tư vấn đặt khám trực tuyến</h4></b>
+                        <h4 class="chatbox__heading--header">Tư vấn đặt khám trực tuyến</h4>
                     </div>
                 </div>
                 <div class="chatbox__messages">
@@ -534,21 +534,20 @@
                             <span class="messages__dot"></span>
                             <span class="messages__dot"></span>
                         </div>
+                        <div class="messages__item messages__item--operator" id="operator"></div>
                     </div>
                 </div>
                 <div class="chatbox__footer">
-                    <input type="text" placeholder="Nhập nội dung...">
-                    <b><p class="chatbox__send--footer">Gửi</p></b>
+                    <input id="mes" class="chatbox__text--footer" type="text" placeholder="Nhập nội dung...">
+                    <button type="button" onclick="Send()">Gửi</button>
                 </div>
             </div>
             <div class="chatbox__button">
                 <button>button</button>
             </div>
         </div>
-    <script src="../box chat/boxchat_assets/js/Chat.js"></script>
+    <script src="../box chat/boxchat_assets/css/chat.css"></script>
     <script src="./assets/js/boxchat.js"></script>
-  </div>
-
   <!---Footer-->
     <footer>
       <div class="container_footer">
