@@ -7,3 +7,15 @@ const icons = {
 const chatbox = new InteractiveChatbox(chatButton, chatContent, icons);
 chatbox.display();
 chatbox.toggleIcon(false, chatButton);
+
+function Send(){
+    var text = document.getElementById("mes").value;
+    if(text=="") {
+        alert("Vui lòng nhập nội dung cần thêm!");
+        document.getElementById("mes").focus();
+    }
+    else {
+       document.getElementById("operator").innerHTML=text
+    }
+}
+
