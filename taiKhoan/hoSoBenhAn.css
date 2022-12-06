@@ -1,9 +1,6 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body,html {
-    height: 100%;
-}
 .row{
     display: flex;
 }
