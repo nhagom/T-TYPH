@@ -187,46 +187,51 @@
             Chuyên khoa Loạn nhịp và Điện sinh lý tim, Trung tâm tim mạch Bệnh viện Đa khoa T-TYPH chẩn đoán và điều trị các bệnh lý về rối loạn nhịp tim như rung nhĩ, rối loạn nhịp nhanh, rối loạn nhịp chậm, suy nút xoang, ngoại tâm thu thất… bằng các kỹ thuật hiện đại như cắt đốt qua catheter; đặt máy tạo nhịp (1 buồng, 2 buồng), máy phá rung cấy được (ICD)s, máy tái đồng bộ tim (CRT-P; CRT-D)… Trung tâm quy tụ đội ngũ y bác sĩ giàu kinh nghiệm và được trang bị hệ thống máy móc tân tiến, giúp chẩn đoán chính xác và hỗ trợ bác sĩ lựa chọn phương pháp điều trị phù hợp với từng bệnh nhân.
         </p>
     </div>
-    <div class="chatbox">
-        <div class="chatbox__support">
-            <div class="chatbox__header">
-                <div class="chatbox__content--header">
-                    <h4 class="chatbox__heading--header">Tư vấn đặt khám trực tuyến</h4>
-                </div>
-            </div>
-            <div class="chatbox__messages">
-                <div>
-                    <div class="messages__item messages__item--visitor">
-                        T-Typh xin chào!
-                    </div>
-                    <div class="messages__item messages__item--operator">
-                        Chào!
-                    </div>
-                    <div class="messages__item messages__item--visitor">
-                        Bạn cần chúng mình hỗ trợ vấn đề nào ạ.
-                    </div>
-                    <div class="messages__item messages__item--operator">
-                        Hãy hướng dẫn tôi đặt lịch khám?
-                    </div>
-                    <div class="messages__item messages__item--operator">
-                        Bệnh viện có chấp nhận sử dụng bảo hiểm y tế không?
-                    </div>
-                    <div class="messages__item messages__item--typing">
-                        <span class="messages__dot"></span>
-                        <span class="messages__dot"></span>
-                        <span class="messages__dot"></span>
+    
+<!-- --------------------------boxchat------------------------- -->
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Tư vấn đặt khám trực tuyến</h4>
                     </div>
                 </div>
+                <div class="chatbox__messages">
+                    <div>
+                        <div class="messages__item messages__item--visitor">
+                            T-Typh xin chào!
+                        </div>
+                        <div class="messages__item messages__item--operator">
+                            Chào!
+                        </div>
+                        <div class="messages__item messages__item--visitor">
+                            Bạn cần chúng mình hỗ trợ vấn đề nào ạ.
+                        </div>
+                        <div class="messages__item messages__item--operator">
+                            Hãy hướng dẫn tôi đặt lịch khám?
+                        </div>
+                        <div class="messages__item messages__item--operator">
+                            Bệnh viện có chấp nhận sử dụng bảo hiểm y tế không?
+                        </div>
+                        <div class="messages__item messages__item--typing">
+                            <span class="messages__dot"></span>
+                            <span class="messages__dot"></span>
+                            <span class="messages__dot"></span>
+                        </div>
+                        <div class="messages__item messages__item--operator" id="operator"></div>
+                    </div>
+                </div>
+                <div class="chatbox__footer">
+                    <input id="mes" class="chatbox__text--footer" type="text" placeholder="Nhập nội dung...">
+                    <button type="button" onclick="Send()">Gửi</button>
+                </div>
             </div>
-            <div class="chatbox__footer">
-                <input class="chatbox__text--footer" type="text" placeholder="Nhập nội dung...">
-                <button type="button" onclick="Send()">Gửi</button>
+            <div class="chatbox__button">
+                <button>button</button>
             </div>
         </div>
-        <div class="chatbox__button">
-            <button>button</button>
-        </div>
-    </div>
+
+
     <footer>
         <div class="container_footer">
           <div class="footer-left">
