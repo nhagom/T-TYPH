@@ -6,10 +6,40 @@
         <title>Bank Payment</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./payment.css">
+        <link rel="stylesheet" href="/header3/header.css">
         <script src="./payment.js"></script>
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+        rel="stylesheet"/>
+        <link rel="stylesheet" href="/footer/footer.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="/trangchu/assets/img/Logo/T.png" rel="icon">
     </head>
     <body>
+        <!-- -------------------Header----------------------------------- -->
+        <div class="header">
+            <div class="headerContainer">
+                <div class="headLogo">
+                    <img src="/image_Tai/logo.png" alt="Logo">
+                </div>
+                <div class="headName">
+                    <h1>BỆNH VIỆN ĐA KHOA QUỐC TẾ T-TYPH</h1>
+                    <h3>"ĐIỀU TRỊ BẰNG TRÁI TIM - CHĂM SÓC BẰNG TẤM LÒNG"</h3>
+                </div>
+                <div class="headSearch">
+                    <form action="#">
+                        <input class="inputHeader" type="text" placeholder="Tìm kiếm...">
+                        <a href="/Tìm kiếm/timkiem.html">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </form>
+                </div>
+                <div class="headQR">
+                    <img src="/image_Tai/QRcode.jpg" alt="QR Code">
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------Payment----------------------------------- -->
         <div class = "paymentBanner">
             <h2>CỔNG THANH TOÁN</h2>
             <div class = "paymentContainer">
@@ -51,7 +81,7 @@
                         </div>
                 </div>
             </div>
-            <input onclick="openModel()" type="button" value=" Hủy giao dịch">
+            <input class="inputPayment" onclick="openModel()" type="button" value=" Hủy giao dịch">
             <div id="modalBox" class="modal">
                 <span onclick="closeModel()" class="close" title="Close Modal">&times;</span>
                 <form >
@@ -59,9 +89,9 @@
                     <h2>Hủy giao dịch</h2> 
                     <p>Bạn chắc chắn muốn hủy giao dịch thanh toán với <span>Bệnh viện Đa khoa Quốc tế T-TYPH</span> ?</p>
                     <div class="clearFix">
-                        <input class="cancelbtn" onclick="closeModel()" type="button" value="ĐÓNG">
+                        <input class="cancelbtn inputPayment" onclick="closeModel()" type="button" value="ĐÓNG">
                         <a href="./huygiaodich.html">
-                            <input class="deletebtn" type="button" value="HỦY GIAO DỊCH">
+                            <input class="deletebtn inputPayment" type="button" value="HỦY GIAO DỊCH">
                         </a>
                     </div>
                   </div>
@@ -71,5 +101,52 @@
                 <p id="timer"><script >countDown();</script></p>
             </div>
         </div>
+        <!-- --------------------------------Footer----------------------------------------------------- -->
+        <footer>
+            <div class="container_footer">
+              <div class="footer-left">
+                <p class="info_footer">
+                  <strong>Giấy SCNĐKDN: </strong> 0301867769 <br />
+                  <strong>Ngày cấp: </strong> 30/10/2022 <br />
+                  <strong>Nơi cấp: </strong> Sở kế hoạch và đầu tư TPHCM <br />
+                  <strong>GPHĐ khám chữa bệnh </strong> số 205/BHYT <br />
+                  <strong>GPHĐ do BYT </strong> cấp ngày 02/11/2022
+                </p>
+                <div class="logo_footer">
+                  <img src="/image/logo.png" alt="Logo" class="logoo" />
+                </div>
+                <hr class="vertical_footer" />
+              </div>
+              <div class="footer-middle">
+                <table id="menu_footer">
+                  <tr>
+                    <td><a href="/trangchu/trangchu.html"><span class="bold"> TRANG CHỦ</span></a></td>
+                    <td><a href="/Tintuc/tin_tuc.html"><span class="bold">TIN TỨC</span></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="/giới thiệu/gioiThieu.html"><span class="bold">GIỚI THIỆU</span></a></td>
+                    <td><a href="/danhgia/danhgia.html"><span class="bold">ĐÁNH GIÁ</span></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="/chuyenKhoa/chuyenKhoa.html"><span class="bold"> CHUYÊN KHOA</span></a></td>
+                    <td><a href="#"><span class="bold">HỖ TRỢ</span></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="/dichvu/khamdv/dichvu.html"><span class="bold">DỊCH VỤ</span></a></td>
+                    <td><a href="#"><span class="bold"> LIÊN HỆ</span></a></td>
+                  </tr>
+                </table>
+                <hr class="vertical_footer" />
+              </div>
+              <div class="footer-right">
+                <p class="contact_footer">
+                  <i class="fa fa-map-marker"></i> &nbsp;&nbsp;&nbsp; Số 68, đường Nguyễn Văn Hưởng, phường Thảo Điền, TP Thủ Đức, TP HCM
+                  <br />
+                  <i class="fa fa-phone"></i> &nbsp;&nbsp;&nbsp;(+84) 862 228 2288 <br />
+                  <i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp;Email: contact@ttyph.com.vn
+                </p>
+              </div>
+            </div>
+          </footer>
     </body>
 </html>

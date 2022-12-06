@@ -38,7 +38,6 @@ html, body{
     font-size: 25px;
     margin: 5px 0;
     text-shadow: 0px 2px 2px gray;
-    font-weight: bold;
 }
 .headName h3{
     font-size: 15px;
@@ -49,6 +48,7 @@ html, body{
     height: 98%;
     position: relative;
     right: 0;
+    margin-left: 40px;
 }
 .headSearch{
     width: 25%;
@@ -57,22 +57,13 @@ html, body{
 }
 .headSearch a{
     color: black;
-    font-size: 14px;
 }
 .headSearch form{
     background-color: white;
-    /*width: 330px;
-    height: 25px;*/
 }
-.headSearch input{
+.inputHeader{
     border: none;
     width: 87%;
-    font-size: 14px;
-}
-.headSearch button{
-    background-color: white;
-    border: none;
-    padding: 0;
 }
 .headBut{
     width: 25%;
@@ -101,20 +92,48 @@ html, body{
     padding: 4px;
     margin: 5px;
     width: 100px;
-    font-size: 12px;
-    height: 30px;
 }
-.btnLogin{
-    background-color: rgba(40, 170, 220, 1);
-    border: 2px solid rgba(3, 149, 181, 1);
-    font-weight: bold;
-    color: white;
-    padding: 4px;
-    border-radius: 10px;
-    margin: 5px;
+.acc {
     width: 100px;
-    font-size: 12px;
-    height: 30px;
+    position: relative;
+}
+.btnAccount{
+    background-color: rgba(255, 177, 177, 1);
+    border-radius: 30px;
+    border: none;
+    padding: 2px 6px 10px 4px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.acc:hover ul{
+    display: block;
+}
+.headBtn ul{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 150px;
+    z-index: 101;
+}
+.account li {
+    background-color: rgba(40, 170, 220, 0.85);
+    padding: 4px;
+    border: 1px solid white;
+    list-style: none;
+    position: relative;
+    font-weight: bold;
+}
+.account a{
+    color: white;
+}
+.account li:hover {
+    background-color: white ;
+    border: 1px solid rgba(40, 170, 220, 0.85) ;
+}
+.account li:hover a {
+    color: rgba(40, 170, 220, 0.85);
 }
 .headNavMobile {
     margin-top: auto;
@@ -131,84 +150,6 @@ html, body{
     border-radius: 31px;
     text-align: center; 
 }
-
-/* css thanh navi */
-.headerNav{
-    width: 100%;
-    background-color: rgba(40, 170, 220, 1);
-    height: 40px;
-}
-.headerNav form {
-    display: none;
-    width: 90%;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-}
-.headerNav form input {
-    border: none;
-    width: 100px;
-    margin: 2px;
-}
-.headerNav > form > button {
-    background-color: white;
-    color: black;
-    width: 10px;
-}
-#menu {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-weight: bold;
-    height: 100%;
-}
-#menu > li {
-    position: relative;
-    padding: 7px 3px 0 3px;
-    border: 1px solid rgba(40, 170, 220, 1);
-}
-#menu > li > ul.subMenu {
-    display: none;
-    list-style: none;
-    position: absolute;
-    top: 39px;
-    left: 1px;
-}
-#menu > li:hover > ul.subMenu {
-    display: block;
-    z-index: 100;
-}
-.headerNav a {
-    text-decoration: none;
-    color: white;
-}
-.subMenu{
-    background-color: rgba(40, 170, 220, 1) ;
-    width: 190px;
-    padding: 0;
-}
-.subMenu li {
-    border: 1px solid white;
-    padding: 5px;
-}
-#menu > li:hover {
-    background-color: white;
-}
-#menu > li:hover > a {
-    color: rgba(40, 170, 220, 1);
-}
-.subMenu li:hover {
-    background-color: white;
-    border: 1px solid rgba(40, 170, 220, 1);
-}
-.subMenu > li:hover > a {
-    color: rgba(40, 170, 220, 1);
-}
-
 /* responsive */
 
 @media screen and (max-width: 1115px) {
@@ -222,10 +163,10 @@ html, body{
         width: 15%;
         position: relative;
     }
-    .headSearch input {
+    .inputHeader {
         width: 50%;
     }
-    .headSearch button {
+    .headSearch a {
         position: absolute;
         right: 0;
         top: 2px
@@ -251,7 +192,10 @@ html, body{
         width: 15%;
         position: absolute;
         right: 0;
-        top: 12px;
+        top: 0px;
+    }
+    .btnBooking {
+        margin-top: 0;
     }
     .headSearch {
         position: absolute;
@@ -334,12 +278,16 @@ html, body{
     .headBtn {
         position: absolute;
         right: 0;
+        top: 5px;
         flex-direction: column;
     }
-    .btnBooking, .btnLogin {
+    .btnBooking {
         font-size: 10px;
         width: 75px;
         padding: 4px;
+    }
+    .btnAccount {
+        font-size: 22px;
     }
     .headNavMobile{
         margin-left: 5px;
@@ -347,9 +295,12 @@ html, body{
     .headLogo {
         margin-left: 0;
     }
+    .headBtn ul {
+        top: 27px;
+    }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 540px) {
     .headName{
         width: 300px;
         margin-left: 5px;
@@ -359,8 +310,9 @@ html, body{
     }
     .headName h3 {
         font-size: 12px;
+        margin-right: 10px;
     }
-    .btnBooking, .btnLogin {
+    .btnBooking{
         font-size: 10px;
         width: 75px;
         padding: 4px;
@@ -368,11 +320,22 @@ html, body{
     .headerNav {
         font-size: 12px;
     }
+    .headBut {
+        flex-wrap: nowrap;
+        width: 5%;
+    }
+    .acc {
+        width: fit-content;
+    }
+    .headBtn ul {
+        top: 25px;
+    }
 }
 
 @media screen and (max-width: 390px) {
     .headName {
         width: 230px;
+        text-align: left;
     }
     .headName h1 {
         font-size: 11px;
@@ -380,10 +343,14 @@ html, body{
     .headName h3 {
         font-size: 8px;
     }
-    .btnBooking, .btnLogin {
-        font-size: 7px;
+    .btnBooking {
+        font-size: 8px;
         width: 60px;
         padding: 4px;
+    }
+    .btnAccount{
+        font-size: 18px;
+        margin-top: 5px;
     }
 }
 

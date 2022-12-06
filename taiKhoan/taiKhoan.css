@@ -3,31 +3,39 @@
 }
 .row{
     display: flex;
-}
-.avatar{
-    width: 10%;
-    text-align: right;
-}
-.avatar img {
     width: 50%;
+    height: 60px;
 }
-.name{
+.row .avatar{
+    width: 20%;
+    text-align: right;
+    min-width: 63px;
+}
+.row .avatar img {
+    width: 100%;
+    max-width: 80px;
+    min-width: 70px;
+}
+.row .name{
     font-weight: bold;
-    padding-top: 20px;
+    font-size: 20px;
+    height: 100%;
+    margin-top: 15px;
 }
-.editProfile{
-    width: 10%;
+.row .editProfile{
+    width: 20%;
     text-align: right;
 }
-.editProfile img {
-    width: 20%;
+.row .editProfile img {
+    width: 30%;
+    min-width: 30px;
 }
-.info {
-    margin-top: auto;
-    margin-bottom: auto;
+.row .info {
+    height: 100%;
+    margin-top: 5px;
     margin-left: 5px;
 }
-.info a{
+.row .info a{
     text-decoration: none;
     color: #0395b5;
     font-weight: bold;

@@ -165,5 +165,7 @@ div.stars {
 .cmt {
   padding-bottom: 10px;
 }
-
+.chatbox{
+  z-index: 200;
+}
 
