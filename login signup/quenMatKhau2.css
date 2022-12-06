@@ -255,13 +255,18 @@
     height: 50px;
     width: 150px;
     border-radius: 5px;
-    overflow: hidden;
+    color:#fff;
     font-size: 18px;
+    overflow: hidden;
     cursor: pointer;
     background-color: #28aadc;
     background-image: linear-gradient(62deg, #28aadc 0%, #66caf2 100%);
-    color: #fff;
     border: 1px salmon solid;
+  }
+  form.resetPw button a {
+    color:#fff;
+    font-size: 18px;
+    text-decoration: none;
   }
   form.verify a {
     text-decoration: none;
