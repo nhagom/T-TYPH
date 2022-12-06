@@ -54,10 +54,8 @@ h2{
 .imgLogo{
     width: 65px;
 }
-
-
 /* -----------------------Model Box------------------------------------------------ */
-input {
+.inputPayment {
   font-size: 16px;
   background-color: var(--primary);
   color: var(--white);
@@ -67,7 +65,7 @@ input {
   width: 350px;
   cursor: pointer;
 }
-input:hover {
+.inputPayment:hover {
   background: var(--next-btn-hover);
 }
 .clearFix{

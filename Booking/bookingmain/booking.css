@@ -90,6 +90,9 @@ h2{
 	text-align: center;
 	margin-bottom: 25px;
 }
+.redStar{
+	color: red;
+}
 /* ------------input---------------------------------------------------------------------------------- */ 
 .bookingType{
 	display: flex;
@@ -137,9 +140,9 @@ h2{
 	background: var(--primary);
 	border-color: var(--secondary);
 }
- input[type="radio"]{
+input[type="radio"]{
 	display: none;
-  }
+}
 /* -----------------------------button----------------------------------------------------------------- */
 .buttonBooking{
 	overflow:auto;
@@ -157,7 +160,7 @@ h2{
 .buttonBooking button:hover {
     opacity: 0.8;
 }
-  #prevBtn {
+#prevBtn {
     background-color: #bbbbbb;
 }
 #nextBtn{
@@ -199,26 +202,20 @@ h2{
 #regForm{
 	width: 90%;
 }
-/* 
-
-form .user-details .input-box{
-    margin-bottom: 15px;
-    width: 100%;
+.bankImg{
+	margin: 5px 8px;
+	width: 250px;
+	height: 120px;
 }
-form .category{
-    width: 100%;
+.walletImg{
+	width: 250px;
+	height: 80px;
+	margin: 5px 8px;
 }
-.content form .user-details{
-    max-height: 300px;
-    overflow-y: scroll;
-}
-.user-details::-webkit-scrollbar{
-    width: 5px;
-}
-}
+ }
 @media(max-width: 480px){
-  .container .content .category{
-    flex-direction: column;
+#regForm{
+	width: 90%;
 }
-} */
 
+} 
