@@ -16,18 +16,16 @@
 body{
 	background: linear-gradient(-180deg, var(--white) , var(--primary) );
 	height: 100%;
-	justify-content: center;
-	align-items: center;
 	padding: 10px;
 }
 #regForm {
-    background-color: #ffffff;
+    background-color: var(--white);
     margin: 25px auto;
-    font-family: Raleway;
     padding: 40px;
     width: 70%;
     min-width: 300px;
 }
+/* --------------------------Step-------------------------------------------- */
 .bookingStep{
     text-align:center;
     margin-bottom: 25px;
@@ -48,7 +46,7 @@ input.invalid {
     margin: 0 15px;
     padding-top: 10px;
     color: var(--white);
-    background-color: #bbbbbb;
+    background-color: var(--back-btn-hover);
     font-weight: bold;
     border: none;  
     border-radius: 50%;
@@ -63,7 +61,7 @@ input.invalid {
 .step.finish {
     background-color: var(--primary);
 }
-/* --------Note------------------------------------------------------------------------------------ */
+/* ----------------------Note------------------------------------------------------------------------------------ */
 .bookingNote{
 	width: 100%;
 	max-width: 700px;
@@ -100,7 +98,7 @@ h2{
 	margin-bottom: 30px;
  } 
 .bookingInput{
-	margin-right: 15px;
+	margin: 0px 10px;
     border: 2px solid var(--thirty);
 	border-radius: 7px;
 	padding: 10px;
@@ -118,7 +116,7 @@ h2{
 .category{
 	display: flex;
 	width: 80%;
-	margin: 15px 0 ;
+	margin: 15px 10px ;
 	justify-content: space-between;
 }
 .category label{
@@ -192,15 +190,17 @@ h2{
 	outline: none;
 	margin-top: 15px;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
-  }
-   .buttonPayment:hover {
+}
+.buttonPayment:hover {
 	background-color: var(--next-btn-hover);
 	color: var(--white);
-  }
- @media(max-width: 584px){
- .container{
-  max-width: 100%;
 }
+ @media(max-width: 768px){
+#regForm{
+	width: 90%;
+}
+/* 
+
 form .user-details .input-box{
     margin-bottom: 15px;
     width: 100%;
@@ -216,9 +216,9 @@ form .category{
     width: 5px;
 }
 }
-@media(max-width: 459px){
+@media(max-width: 480px){
   .container .content .category{
     flex-direction: column;
 }
-}
+} */
 
