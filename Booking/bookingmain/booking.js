@@ -29,11 +29,11 @@ function nextPrev(n) {
   // Tăng hoặc giảm tab hiện tại thêm 1:
   currentTab = currentTab + n;
   // nếu bạn đã đến cuối biểu mẫu ...
-  // if (currentTab >= x.length) {
-  //   // biểu mẫu được gửi:
-  //   document.getElementById("regForm").submit();
-  //   return false;
-  // }
+  if (currentTab >= x.length) {
+    // biểu mẫu được gửi:
+    document.getElementById("regForm").submit();
+    return false;
+  }
   // Nếu không, hiển thị đúng tab
   showTab(currentTab);
 }
