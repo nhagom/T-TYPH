@@ -4,16 +4,21 @@
 .row{
     display: flex;
 }
-.avatar{
-    width: 10%;
+.row .avatar{
+    width: 20%;
     text-align: right;
+    min-width: 63px;
 }
-.avatar img {
-    width: 80px;
+.row .avatar img {
+    width: 100%;
+    max-width: 80px;
+    min-width: 70px;
 }
-.name{
+.row .name{
     font-weight: bold;
-    padding-top: 20px;
+    font-size: 20px;
+    height: 100%;
+    margin-top: 15px;
 }
 .info {
     display: flex;

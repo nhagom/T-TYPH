@@ -3,6 +3,7 @@
 }
 .row{
     display: flex;
+    margin-top: 10px;
 }
 .editProfile{
     width: 10%;
@@ -23,23 +24,29 @@
 }
 .information{
     display: flex;
-    width: 70%;
+    width: 100%;
     margin: auto;
+    justify-content: center;
    }
 .hoSo {
-    width: 50%;
+    width: 35%;
    }
 .boSung {
-    width: 50%;
+    width: 35%;
    }
 .form__row{
     padding-top: 5px;
    }
-input, select{
+.form__row input{
     width: 70%;
     height: 36px;
     font-size: 17px;
    }
+.form__row select {
+    width: 70%;
+    height: 42px;
+    font-size: 17px;
+}
 span.redStar{
     color: red;
    }

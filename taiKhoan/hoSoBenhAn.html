@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hồ sơ bệnh án</title>
+    <title>Hồ sơ bệnh án | Bệnh viện đa khoa quốc tế T-Typh</title>
     <link rel="stylesheet" href="./hoSoBenhAn.css">
     <link rel="stylesheet" href="../header2/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
 </head>
 <body>
-    <!-- <div class="header">
+    <div class="header">
         <div class="headerContainer">
             <div class="headNavMobile">
                 <button class="iconNav" onclick="showNav()">
@@ -26,10 +31,9 @@
             <div class="headSearch">
                 <form action="#">
                     <input type="text" placeholder="Tìm kiếm...">
-                    <button>
-                        <a href="../Tìm kiếm/timkiem.html"><i class="bi bi-search"></i>
-                        </a>
-                    </button>
+                    <a href="../Tìm kiếm/timkiem.html">
+                        <i class="bi bi-search"></i>
+                    </a>
                 </form>
             </div>
             <div class="headBut">
@@ -46,7 +50,7 @@
                         <button class="btnAccount">🐴</button>
                     <ul class="account">
                         <li><a href="../taiKhoan/taiKhoan.html">TÀI KHOẢN</a></li>
-                        <li><a href="">HỒ SƠ BỆNH ÁN</a></li>
+                        <li><a href="../taiKhoan/hoSoBenhAn.html">HỒ SƠ BỆNH ÁN</a></li>
                         <li><a href="../trangchu/trangchu.html">ĐĂNG XUẤT</a></li>
                     </ul>
                     </div>
@@ -60,7 +64,10 @@
         <div class="headerNav" id="myNav">
             <form action="#">
                 <input type="text" placeholder="Tìm kiếm...">
-                <button><i class="bi bi-search"></i></button>
+                <a href="../Tìm kiếm/timkiem.html">
+                    <i class="bi bi-search"></i>
+                </a>
+                <!-- <button></button> -->
             </form>
             <ul id="menu">
                 <li><a href="../trangchu/trangchu.html">TRANG CHỦ</a></li>
@@ -79,7 +86,7 @@
                         <li><a href="../chuyenKhoa/coXuongKhop.html">CƠ XƯƠNG KHỚP</a></li>
                         <li><a href="../chuyenKhoa/taiMuiHong.html">TAI MŨI HỌNG</a></li>
                         <li><a href="../chuyenKhoa/ungBuou.html">UNG BƯỚU</a></li>
-                        <li><a href="#">NHI</a></li>
+                        <li><a href="../chuyenKhoa/nhi.html">NHI</a></li>
                         <li><a href="../chuyenKhoa/duoc.html">DƯỢC</a></li>
                         <li><a href="../chuyenKhoa/capCuu.html">CẤP CỨU</a></li>
                         <li><a href="../chuyenKhoa/noiTongHop.html">NỘI TỔNG HỢP</a></li>
@@ -87,15 +94,15 @@
                 </li>
                 <li><a href="#">DỊCH VỤ ▼</a>
                     <ul class="subMenu">
-                        <li><a href="../dichvu/khamthuong/khamthuong.html">KHÁM THƯỜNG</a></li>
-                        <li><a href="../dichvu/khamdv/dichvu.html">KHÁM DỊCH VỤ</a></li>
+                        <li><a href="../dichvu/khamthuong.html">KHÁM THƯỜNG</a></li>
+                        <li><a href="../dichvu/dichvu.html">KHÁM DỊCH VỤ</a></li>
                     </ul>
                 </li>
                 <li><a href="../Tintuc/tin_tuc.html">TIN TỨC</a></li>
                 <li><a href="../danhgia/danhgia.html">ĐÁNH GIÁ</a></li>
             </ul>
         </div>
-    </div> -->
+    </div>
     <div class="container">
         <div class="row">
             <div class="avatar">
@@ -175,4 +182,51 @@
         </div>
     </div>
 </body>
+<footer>
+    <div class="container_footer">
+      <div class="footer-left">
+        <p class="info_footer">
+          <strong>Giấy SCNĐKDN: </strong> 0301867769 <br />
+          <strong>Ngày cấp: </strong> 30/10/2022 <br />
+          <strong>Nơi cấp: </strong> Sở kế hoạch và đầu tư TPHCM <br />
+          <strong>GPHĐ khám chữa bệnh </strong> số 205/BHYT <br />
+          <strong>GPHĐ do BYT </strong> cấp ngày 02/11/2022
+        </p>
+        <div class="logo_footer">
+          <img src="../image/logo.png" alt="Logo" class="logoo" />
+        </div>
+        <hr class="vertical_footer" />
+      </div>
+      <div class="footer-middle">
+        <table id="menu_footer">
+          <tr>
+            <td><a href="../trangchu/trangchu.html"><span class="bold"> TRANG CHỦ</span></a></td>
+            <td><a href="../Tintuc/tin_tuc.html"><span class="bold">TIN TỨC</span></a></td>
+          </tr>
+          <tr>
+            <td><a href="../giới thiệu/gioiThieu.html"><span class="bold">GIỚI THIỆU</span></a></td>
+            <td><a href="../danhgia/danhgia.html"><span class="bold">ĐÁNH GIÁ</span></a></td>
+          </tr>
+          <tr>
+            <td><a href="../chuyenKhoa/chuyenKhoa.html"><span class="bold"> CHUYÊN KHOA</span></a></td>
+            <td><a href="#"><span class="bold">HỖ TRỢ</span></a></td>
+          </tr>
+          <tr>
+            <td><a href="../dichvu/khamdv/dichvu.html"><span class="bold">DỊCH VỤ</span></a></td>
+            <td><a href="#"><span class="bold"> LIÊN HỆ</span></a></td>
+          </tr>
+        </table>
+        <hr class="vertical_footer" />
+      </div>
+      <div class="footer-right">
+        <p class="contact_footer">
+          <i class="fa fa-map-marker"></i> &nbsp;&nbsp;&nbsp; Số 68, đường Nguyễn Văn Hưởng, phường Thảo Điền, TP Thủ Đức, TP HCM
+          <br />
+          <i class="fa fa-phone"></i> &nbsp;&nbsp;&nbsp;(+84) 862 228 2288 <br />
+          <i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp;Email: contact@ttyph.com.vn
+        </p>
+      </div>
+    </div>
+  </footer>
+<script src="../header2/header.js"></script>
 </html>
