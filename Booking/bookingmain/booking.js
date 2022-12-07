@@ -26,15 +26,15 @@ function nextPrev(n) {
   if (n == 1 && !validateForm()) return false;
   // Ẩn tab hiện tại:
   x[currentTab].style.display = "none";
-  // Tăng hoặc giảm tab hiện tại thêm 1:
+  // Tăng hoặc giảm tab hiện tại thêm 1
   currentTab = currentTab + n;
-  // nếu bạn đã đến cuối biểu mẫu ...
+  // nếu bạn đã đến cuối biểu mẫu
   if (currentTab >= x.length) {
     // biểu mẫu được gửi:
     document.getElementById("regForm").submit();
     return false;
   }
-  // Nếu không, hiển thị đúng tab
+  // Nếu không, hiển thị đúng tab.
   showTab(currentTab);
 }
 
@@ -71,7 +71,6 @@ function fixStepIndicator(n) {
   //và thêm lớp "hoạt động" vào bước hiện tại
   x[n].className += " active";
 }
-
 
 
 // ------------Khám thường, dịch vụ----------------------
